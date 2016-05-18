@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="dist/css/application.css">
+	<link rel="stylesheet" href="dist/fonts/icons/icons.css">
+	<title>Admin main</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="my my_w"></div>
+			<div class="auth_path">
+				<ul>
+					<li><a href="" class="auth_link">
+						<div class="my my_k"></div>
+						<span>Admin: Грязнова Анна</span>
+					</a></li>
+					<li><a href="" class="auth_link auth_out">
+						Выход
+					</a></li>
+				</ul>
+			</div>
+		</div>	
+	</header>
+	<ul class="date_time_path">
+		<li>
+			<div class="my my_j"></div>
+			<span>14 июня, 2016</span>
+		</li>
+		<li>
+			<div class="my my_i"></div>
+			<span>13:32</span>
+		</li>
+	</ul>
+	<main class="main_board container">
+
+		<h1 class="my my_g main_board_h1"><span>Заказы</span>
+		<form action="?" class="app_form_search" id="app_form_search">
+			<div class="my my_h"></div>
+			<input type="text" name="app_search" id="app_search" class="app_search" placeholder="Введите № чека">
+		</form>
+		</h1>
+		<div class="menu_main_board">
+			<div id="all" class="menu_main_link">
+				<div class="my my_a"></div>
+				<div class="count_app">420</div>
+				<span>Все</span>
+			</div>
+			<div id="new" class="menu_main_link">
+				<div class="my my_b"></div>
+				<div class="count_app">35</div>
+				<span>Новые</span>
+			</div>
+			<div id="accepted" class="menu_main_link">
+				<div class="my my_c"></div>
+				<div class="count_app">65</div>
+				<span>Принятые</span>
+			</div>
+			<div id="on_way" class="menu_main_link">
+				<div class="my my_d"></div>
+				<div class="count_app">65</div>
+				<span>В пути</span>
+			</div>
+			<div id="completed" class="menu_main_link">
+				<div class="my my_e"></div>
+				<div class="count_app">65</div>
+				<span>Завершенные</span>
+			</div>
+			<div id="deleted" class="menu_main_link">
+				<div class="my my_f"></div>
+				<div class="count_app">2</div>
+				<span>Удаленные</span>
+			</div>
+		</div>
+		<form action="?" class="person_card" id="person_card">
+			<input type="text" class="person_card_phone" id="person_card_phone" name="person_card_phone" placeholder="+7 (917) 456-45-69">
+			<input type="text" class="person_card_adress" id="person_card_adress" name="person_card_adress" placeholder="ул.Аврора, д. 70 , пд. 1, кв. 96">
+			<input type="text" class="person_card_name" id="person_card_name" name="person_card_name" placeholder="Наталья Руденко">
+			<input type="text" class="person_card_number" id="person_card_number" name="person_card_number" placeholder="445625">
+			<label for="person_card_number">&nbsp;</label>
+			<div class="person_card_submit" id="person_card_submit" >Изменить</div>
+		</form>
+		<table class="cur_application">
+			<thead class="cur_application_head">
+				<tr>
+					<td class="cur_application_number_head">№</td>
+					<td class="cur_application_product_head">Товар</td>
+					<td class="cur_application_count_head">Кол-во</td>
+					<td class="cur_application_change_count_head">Изменить кол-во</td>
+					<td class="cur_application_delete_count_head">Удалить</td>
+					<td class="cur_application_cost_head">Стоимость</td>
+					<td class="cur_application_summ_head">Сумма</td>
+				</tr>
+			</thead>
+			<tbody class="cur_application_body">
+				<tr>
+					<td class="cur_application_number_body">1</td>
+					<td class="cur_application_product_body">Филадельфия лайт</td>
+					<td class="cur_application_count_body">1</td>
+					<td class="cur_application_change_count_body">
+						<div class="my my_q"></div>
+						<div class="my my_r"></div>
+					</td>
+					<td class="cur_application_delete_count_body">
+						<div class="my my_s"></div>
+					</td>
+					<td class="cur_application_cost_body">190</td>
+					<td class="cur_application_summ_body">190</td>
+				</tr>
+				<tr>
+					<td class="cur_application_number_body">2</td>
+					<td class="cur_application_product_body">Карбонара</td>
+					<td class="cur_application_count_body">1</td>
+					<td class="cur_application_change_count_body">
+						<div class="my my_q"></div>
+						<div class="my my_r"></div>
+					</td>
+					<td class="cur_application_delete_count_body">
+						<div class="my my_s"></div>
+					</td>
+					<td class="cur_application_cost_body">230</td>
+					<td class="cur_application_summ_body">230</td>
+				</tr>
+				<tr>
+					<td class="cur_application_number_body">3</td>
+					<td class="cur_application_product_body">Салат греческий</td>
+					<td class="cur_application_count_body">2</td>
+					<td class="cur_application_change_count_body">
+						<div class="my my_q"></div>
+						<div class="my my_r"></div>
+					</td>
+					<td class="cur_application_delete_count_body">
+						<div class="my my_s"></div>
+					</td>
+					<td class="cur_application_cost_body">190</td>
+					<td class="cur_application_summ_body">380</td>
+				</tr>
+				<tr class="cur_application_body_add_product">
+					<td class="cur_application_number_body">4</td>
+					<td class="cur_application_product_body">Добавить позицию</td>
+					<td class="cur_application_count_body"></td>
+					<td class="cur_application_change_count_body">
+					</td>
+					<td class="cur_application_delete_count_body">
+					</td>
+					<td class="cur_application_cost_body"></td>
+					<td class="cur_application_summ_body"></td>
+				</tr>
+			</tbody>
+		</table>
+		<form action="?" class="comment_and_summ_block">
+			<div class="comments">
+				<label for="comments">Комментарии</label>
+				<textarea id="comments_textarea" name="comments_textarea" class="comments">на 3 персоны,<br>
+	греческий салат без оливкового масла.</textarea>
+			</div>
+			<div class="all_summ">
+				<label for="all_summ_textarea">Скидка по № 445625 15%(730-15%)</label>
+				<div class="all_summ_textarea">
+					Итого: 680 руб.
+				</div>
+			</div>
+		</form>
+	</main>
+	<script src="dist/bower/jquery/dist/jquery.js">
+	</script>
+	<script src="dist/js/script.js">	
+	</script>
+</body>
+</html>

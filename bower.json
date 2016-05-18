@@ -1,0 +1,23 @@
+{
+  "name": "sushi",
+  "description": "internet shopping site",
+  "main": "index.html",
+  "authors": [
+    "Vitaliy Emelianov"
+  ],
+  "license": "GNU",
+  "keywords": [
+    "no"
+  ],
+  "homepage": "no",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3"
+  }
+}
