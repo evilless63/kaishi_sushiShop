@@ -74,7 +74,7 @@
 			</div>
 		</div>
 		<form action="?" class="person_card" id="person_card">
-			<input type="text" class="person_card_phone" id="person_card_phone" name="person_card_phone" placeholder="+7 (917) 456-45-69">
+			<input type="text" class="person_card_phone" id="person_card_phone" name="person_card_phone" data-validation="number" placeholder="+7 (917) 456-45-69">
 			<input type="text" class="person_card_adress" id="person_card_adress" name="person_card_adress" placeholder="ул.Аврора, д. 70 , пд. 1, кв. 96">
 			<input type="text" class="person_card_name" id="person_card_name" name="person_card_name" placeholder="Наталья Руденко">
 			<input type="text" class="person_card_number" id="person_card_number" name="person_card_number" placeholder="445625">
@@ -152,7 +152,7 @@
 		<form action="?" class="comment_and_summ_block">
 			<div class="comments">
 				<label for="comments">Комментарии</label>
-				<textarea id="comments_textarea" name="comments_textarea" class="comments">на 3 персоны,<br>
+				<textarea id="comments_textarea" name="comments_textarea" class="comments_textarea">на 3 персоны,
 	греческий салат без оливкового масла.</textarea>
 			</div>
 			<div class="all_summ">
@@ -162,10 +162,22 @@
 				</div>
 			</div>
 		</form>
+		<ul class="app_manage_buttons">
+			<li><div class="app_button_accepted">Принято</div></li>
+			<li><div class="app_button_ready">Готово</div></li>
+			<li><div class="app_button_check_num">№ Чека</div></li>
+			<li><div class="app_button_onway">В пути</div></li>
+			<li><div class="app_button_delivered">Доставлено</div></li>
+			<li><div class="app_button_delete">Удалить</div></li>
+		</ul>
 	</main>
 	<script src="dist/bower/jquery/dist/jquery.js">
 	</script>
+	<script src="dist/bower/jquery-form-validator/form-validator/jquery.form-validator.min.js"></script>
 	<script src="dist/js/script.js">	
+	</script>
+	<script>
+		$.validate();
 	</script>
 </body>
 </html>

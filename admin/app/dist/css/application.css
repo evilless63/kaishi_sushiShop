@@ -298,5 +298,116 @@ body {
       body main.main_board tr.cur_application_body_add_product td.cur_application_change_count_body,
       body main.main_board tr.cur_application_body_add_product td.cur_application_delete_count_body {
         background-color: #f5f5f5; }
-    body main.main_board .comment_and_summ_block {
-      background-color: #ced8e1; }
+  body .comment_and_summ_block {
+    background-color: #ced8e1;
+    border-top: solid 1px #9aadbe;
+    border-bottom: solid 1px #9aadbe;
+    overflow: hidden; }
+    body .comment_and_summ_block .comments {
+      float: left;
+      margin: 6px 12px; }
+      body .comment_and_summ_block .comments label {
+        display: block;
+        font-size: 11.33px;
+        padding: 6px 0 12px 0; }
+      body .comment_and_summ_block .comments .comments_textarea {
+        padding: 8px 10px;
+        font-size: 16.33px; }
+    body .comment_and_summ_block .all_summ {
+      float: right;
+      margin: 6px 12px; }
+      body .comment_and_summ_block .all_summ label {
+        display: block;
+        font-size: 11.33px;
+        padding: 6px 0 12px 0; }
+      body .comment_and_summ_block .all_summ .all_summ_textarea {
+        display: block;
+        width: 238px;
+        font-size: 23.67px;
+        font-weight: bold;
+        background-color: #fff;
+        border: 1px solid #9aadbe;
+        padding: 14px 10px;
+        box-sizing: border-box; }
+  body #comments_textarea {
+    width: 900px;
+    max-width: 900px;
+    border: 1px solid #9aadbe; }
+  body ul.app_manage_buttons {
+    -webkit-padding-start: 0px;
+    position: relative; }
+    body ul.app_manage_buttons li {
+      position: relative;
+      display: inline-block;
+      font-size: 26.67px;
+      font-weight: bold;
+      text-transform: uppercase; }
+      body ul.app_manage_buttons li .app_button_accepted {
+        padding: 8px 15px 6px 50px;
+        color: #fff;
+        -webkit-box-shadow: inset 1px 1px 5px 0px rgba(0, 0, 0, 0.45);
+        -moz-box-shadow: inset 1px 1px 5px 0px rgba(0, 0, 0, 0.45);
+        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.45);
+        background: url("../../images/app_button_accepted.svg") no-repeat 5px 0px;
+        background-size: contain;
+        background-color: #579ac7;
+        margin: 8px 6px 8px 12px;
+        cursor: pointer; }
+      body ul.app_manage_buttons li .app_button_ready {
+        padding: 8px 15px 6px 50px;
+        color: #fff;
+        -webkit-box-shadow: inset 1px 1px 5px 0px rgba(0, 0, 0, 0.45);
+        -moz-box-shadow: inset 1px 1px 5px 0px rgba(0, 0, 0, 0.45);
+        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.45);
+        background: url("../../images/app_button_ready.svg") no-repeat 5px 0px;
+        background-size: contain;
+        background-color: #009a78;
+        margin: 8px 6px;
+        cursor: pointer; }
+      body ul.app_manage_buttons li .app_button_check_num {
+        padding: 8px 15px 6px 15px;
+        color: #d1d2d3;
+        -webkit-box-shadow: inset 1px 1px 5px 0px rgba(0, 0, 0, 0.45);
+        -moz-box-shadow: inset 1px 1px 5px 0px rgba(0, 0, 0, 0.45);
+        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.45);
+        background: url("../../images/app_button_accepted.svg") no-repeat 5px 0px;
+        background-size: contain;
+        background-color: #fff;
+        margin: 8px 6px;
+        cursor: pointer; }
+      body ul.app_manage_buttons li .app_button_onway {
+        padding: 8px 15px 6px 50px;
+        color: #fff;
+        -webkit-box-shadow: inset 1px 1px 5px 0px rgba(0, 0, 0, 0.45);
+        -moz-box-shadow: inset 1px 1px 5px 0px rgba(0, 0, 0, 0.45);
+        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.45);
+        background: url("../../images/app_button_onway.svg") no-repeat 2px 0px;
+        background-size: contain;
+        background-color: #8298bd;
+        margin: 8px 6px;
+        cursor: pointer; }
+      body ul.app_manage_buttons li .app_button_delivered {
+        padding: 8px 15px 6px 50px;
+        color: #fff;
+        -webkit-box-shadow: inset 1px 1px 5px 0px rgba(0, 0, 0, 0.45);
+        -moz-box-shadow: inset 1px 1px 5px 0px rgba(0, 0, 0, 0.45);
+        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.45);
+        background: url("../../images/app_button_delivered.svg") no-repeat 5px 0px;
+        background-size: contain;
+        background-color: #82bd8d;
+        margin: 8px 6px;
+        cursor: pointer; }
+      body ul.app_manage_buttons li .__active {
+        box-shadow: inset 1px 1px 5px 0px rgba(0, 0, 0, 0.45); }
+      body ul.app_manage_buttons li .app_button_delete {
+        font-size: 17.33px;
+        font-weight: 300;
+        background: url("../../images/app_button_delete.svg") no-repeat 88px 0px;
+        background-size: 20% 90%;
+        background-color: #db0000;
+        color: #fff;
+        cursor: pointer;
+        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.45);
+        padding: 4px 25px 4px 8px;
+        border-radius: 5px;
+        margin: 0px 0px 0px 70px; }
