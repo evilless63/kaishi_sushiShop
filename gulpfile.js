@@ -6,16 +6,16 @@ var browserSync = require('browser-sync');
 
 
 gulp.task('watch', ['browserSync', 'sass'], function(){
-	gulp.watch('admin/app/sass/*.sass', ['sass']);
-	gulp.watch('admin/app/*.html', browserSync.reload);
-	gulp.watch('admin/app/dist/font/icons/icons.css', browserSync.reload);
-	gulp.watch('admin/app/dist/js/script.js', browserSync.reload);
+	gulp.watch('content/dist/sass/*.sass', ['sass']);
+	gulp.watch('content/dist/*.html', browserSync.reload);
+	gulp.watch('content/dist/js/*.js', browserSync.reload);
+	gulp.watch('content/dist/bower/*/*.js', browserSync.reload);
 });
 
 gulp.task('sass', function(){
-	return gulp.src('admin/app/sass/*.sass')
+	return gulp.src('content/dist/sass/*.sass')
 	.pipe(sass())
-	.pipe(gulp.dest('admin/app/dist/css'))
+	.pipe(gulp.dest('content/dist/css'))
 	.pipe(browserSync.reload({
 		stream:true
 	}))
@@ -24,7 +24,7 @@ gulp.task('sass', function(){
 gulp.task('browserSync', function(){
 	browserSync({
 		server: {
-			baseDir: 'admin/app'
+			baseDir: 'content/dist'
 		},
 	})
 });

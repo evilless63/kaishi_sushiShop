@@ -19,7 +19,10 @@
   ],
   "dependencies": {
     "jquery": "^2.2.3",
-    "normalize-css": "normalize.css#^4.1.1",
-    "jquery-form-validator": "^2.3.18"
+    "jquery-form-validator": "^2.3.18",
+    "moff": "^1.10.43",
+    "html5shiv": "^3.7.3",
+    "css3-mediaqueries-js": "^1.0.0",
+    "flexboxgrid": "^6.3.0"
   }
 }
