@@ -1,0 +1,43 @@
+@import "main.sass"
+.mainWrap
+	background-color: rgb(241, 240, 240)
+	box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .6);
+	.content
+		h1.headerContent
+			font-family: $ff_candara
+			font-size: 1.3em
+			text-transform: uppercase
+			font-weight: bold
+			padding: 12px 0px 
+		.feedbackBlock
+			border-top: 1px solid #d9d8d8
+			display: flex
+			justify-content: space-between
+			padding: 12px 3px 0 3px
+			.feedbackBlockImageDesc
+				width: 70%
+				.feedbackBlockImage
+					float: left
+					img
+						width: 51px
+						height: 51px
+						border-radius: 50%
+				.feedbackBlockDesc
+					.feedbackBlockDescRow	
+						display: flex
+						font-family: $ff_arial
+						font-size: 0.8em
+						text-transform: none
+						font-weight: normal
+						padding: 5px 0px 0px 6px
+						.feedbackBlockDescName
+							color: $black
+						.feedbackBlockDescWhere
+							color: #999999	
+							padding: 0 0 0 5px
+						.feedbackBlockDescComment
+							color: #999999	
+			.feedbackBlockStars	
+				margin-right: 16px
+
+		

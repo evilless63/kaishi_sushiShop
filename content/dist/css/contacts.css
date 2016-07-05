@@ -507,3 +507,31 @@ footer {
   padding: 8px 10px;
   border-radius: 5px;
   cursor: pointer; }
+
+.mainWrap .content {
+  width: 100%;
+  background-color: #f1f0f0;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.6); }
+  .mainWrap .content h1.contactsContentHeader {
+    font-family: candara;
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 18px 0 30px 0; }
+  .mainWrap .content .contactsContentRow {
+    display: flex;
+    justify-content: space-around; }
+    .mainWrap .content .contactsContentRow .contactsContentBlock {
+      text-align: center; }
+      .mainWrap .content .contactsContentRow .contactsContentBlock span {
+        font-family: arial;
+        font-size: 1.2em;
+        padding: 6px 0;
+        display: block; }
+  .mainWrap .content .contactsContentMap {
+    margin: 20px auto 270px auto;
+    width: 922px; }
+
+main {
+  margin-bottom: 0px; }

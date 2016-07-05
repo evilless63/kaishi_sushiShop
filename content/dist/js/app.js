@@ -10,3 +10,22 @@ window.moffConfig = {
 	loadOnHover: true,
 	cacheLiveTime: 2000
 };
+
+$(document).ready(function(){
+	$( ".themeSetsBlockImageCover" ).hover(
+	  function() {
+	    $( this ).children("span").css( "display", "block" );
+	  }, function() {
+	    $( this ).children("span").css( "display", "none" );
+	  }
+	);
+
+	$( "#registration" ).click(
+		function(){
+			$( ".registrationWrapper" ).css( "display", "block" );	
+		});
+	$( ".gdeZakryt" ).click(
+		function(){
+			$( ".registrationWrapper" ).css( "display", "none" );
+		});
+});
