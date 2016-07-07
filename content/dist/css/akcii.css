@@ -224,6 +224,8 @@ main {
     font-size: 1.2em;
     background-color: #1d1d1b;
     padding: 13px 15px; }
+    .mainWrap .sidebar .themeSets .themeSetsHeader a {
+      color: white; }
   .mainWrap .sidebar .themeSets .themeSetsBlock {
     background-color: rgba(255, 255, 255, 0.4); }
     .mainWrap .sidebar .themeSets .themeSetsBlock .themeSetsBlockHeader a {
@@ -282,7 +284,7 @@ main {
       padding: 3px 15px 9px 15px; }
 
 .mainWrap .content {
-  width: 68.9%; }
+  width: 67%; }
   .mainWrap .content .saleBanner {
     padding: 40px 0;
     position: relative; }
@@ -509,10 +511,14 @@ footer {
   cursor: pointer; }
 
 .mainWrapAkcii {
-  background-color: #f1f0f0; }
+  background-color: #f1f0f0;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.6); }
 
 .centered {
   text-align: center !important; }
+
+.content {
+  width: 68.9% !important; }
 
 h1.headerContent, h2.headerContent, .headerContent {
   font-family: candara;

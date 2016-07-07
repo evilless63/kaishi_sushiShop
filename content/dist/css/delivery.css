@@ -510,43 +510,165 @@ footer {
   border-radius: 5px;
   cursor: pointer; }
 
+.mainWrapAkcii {
+  background-color: #f1f0f0;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.6); }
+
+.centered {
+  text-align: center !important; }
+
+.content {
+  width: 68.9% !important; }
+
+h1.headerContent, h2.headerContent, .headerContent {
+  font-family: candara;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 12px 0px; }
+
+.howItworks {
+  font-size: 1.1em;
+  padding: 22px 100px; }
+
+.akciiContent {
+  max-height: 940px;
+  overflow: auto; }
+  .akciiContent .akciiRowDays {
+    margin: 25px 0 0 0;
+    width: 92%; }
+  .akciiContent .akciiRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px; }
+    .akciiContent .akciiRow .akciiBlock {
+      color: black;
+      text-align: center; }
+      .akciiContent .akciiRow .akciiBlock .akciiBlockRound {
+        position: relative;
+        border-radius: 50%;
+        background-color: rgba(223, 222, 222, 0.7);
+        width: 180px;
+        height: 180px;
+        margin: 12px auto -193px auto;
+        text-align: center;
+        box-sizing: border-box;
+        font-family: candara;
+        font-size: 1.4em;
+        font-weight: 900;
+        padding: 70px 8% 0 8%; }
+      .akciiContent .akciiRow .akciiBlock .akciiBlockRound:hover {
+        box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.7); }
+    .akciiContent .akciiRow .akciiBlockDays {
+      color: black;
+      text-align: left; }
+      .akciiContent .akciiRow .akciiBlockDays .akciiBlockContainer {
+        position: relative;
+        margin: 12px auto -106px auto;
+        text-align: left;
+        box-sizing: border-box;
+        font-family: candara;
+        padding: 0px 40px 0 3%;
+        width: 300px;
+        color: white; }
+        .akciiContent .akciiRow .akciiBlockDays .akciiBlockContainer .akciiBlockContainerHeader {
+          text-transform: uppercase;
+          font-size: 1.3em;
+          font-weight: 900; }
+        .akciiContent .akciiRow .akciiBlockDays .akciiBlockContainer .akciiBlockContainerSubheader {
+          font-size: 1.2em;
+          padding: 7px 0; }
+        .akciiContent .akciiRow .akciiBlockDays .akciiBlockContainer .akciiBlockContainerDescription {
+          font-size: 0.9em;
+          line-height: 1.1em; }
+
+.akciiDesc {
+  width: 680px !important; }
+
+.headerContentDesc {
+  padding-left: 40px !important; }
+
+span.headerContentDesc {
+  color: #353637;
+  font-size: 0.8em;
+  font-weight: 900;
+  font-family: candara;
+  text-align: left;
+  display: block;
+  padding-left: 40px !important;
+  padding-right: 100px;
+  line-height: 1.2em; }
+
+main {
+  margin-bottom: 0px; }
+
 .mainWrap {
   background-color: #f1f0f0;
   box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.6); }
   .mainWrap .content {
-    width: 68.9% !important; }
-    .mainWrap .content h1.headerContent {
-      font-family: candara;
-      font-size: 1.3em;
-      text-transform: uppercase;
-      font-weight: bold;
-      padding: 12px 0px; }
-    .mainWrap .content .feedbackBlock {
-      border-top: 1px solid #d9d8d8;
+    width: 100% !important;
+    padding: 15px;
+    font-family: candara; }
+    .mainWrap .content h1.headerContent, .mainWrap .content h2.headerContent, .mainWrap .content .headerContent {
+      padding: 0 0 15px 0; }
+    .mainWrap .content .deliveryContentPromo {
+      display: flex;
+      background-color: #00b4cd;
+      justify-content: space-around;
+      align-items: center;
+      border-bottom: 2px solid #222222;
+      margin: 0 -15px; }
+      .mainWrap .content .deliveryContentPromo .deliveryContentPromoBlock {
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        padding: 10px; }
+        .mainWrap .content .deliveryContentPromo .deliveryContentPromoBlock .first {
+          width: 16%; }
+        .mainWrap .content .deliveryContentPromo .deliveryContentPromoBlock .second {
+          width: 22%; }
+        .mainWrap .content .deliveryContentPromo .deliveryContentPromoBlock .third {
+          width: 30%; }
+        .mainWrap .content .deliveryContentPromo .deliveryContentPromoBlock .deliveryContentPromoDesc {
+          font-size: 1.3em; }
+          .mainWrap .content .deliveryContentPromo .deliveryContentPromoBlock .deliveryContentPromoDesc span {
+            font-size: 0.6em; }
+        .mainWrap .content .deliveryContentPromo .deliveryContentPromoBlock .big {
+          font-size: 1.6em;
+          font-weight: bold; }
+          .mainWrap .content .deliveryContentPromo .deliveryContentPromoBlock .big span {
+            font-size: 0.5em;
+            font-weight: normal; }
+    .mainWrap .content .deliveryContentDesc {
       display: flex;
       justify-content: space-between;
-      padding: 12px 3px 0 3px; }
-      .mainWrap .content .feedbackBlock .feedbackBlockImageDesc {
-        width: 70%; }
-        .mainWrap .content .feedbackBlock .feedbackBlockImageDesc .feedbackBlockImage {
-          float: left; }
-          .mainWrap .content .feedbackBlock .feedbackBlockImageDesc .feedbackBlockImage img {
-            width: 51px;
-            height: 51px;
-            border-radius: 50%; }
-        .mainWrap .content .feedbackBlock .feedbackBlockImageDesc .feedbackBlockDesc .feedbackBlockDescRow {
-          display: flex;
-          font-family: arial;
-          font-size: 0.8em;
-          text-transform: none;
-          font-weight: normal;
-          padding: 5px 0px 0px 6px; }
-          .mainWrap .content .feedbackBlock .feedbackBlockImageDesc .feedbackBlockDesc .feedbackBlockDescRow .feedbackBlockDescName {
-            color: black; }
-          .mainWrap .content .feedbackBlock .feedbackBlockImageDesc .feedbackBlockDesc .feedbackBlockDescRow .feedbackBlockDescWhere {
-            color: #999999;
-            padding: 0 0 0 5px; }
-          .mainWrap .content .feedbackBlock .feedbackBlockImageDesc .feedbackBlockDesc .feedbackBlockDescRow .feedbackBlockDescComment {
-            color: #999999; }
-      .mainWrap .content .feedbackBlock .feedbackBlockStars {
-        margin-right: 16px; }
+      align-items: flex-start;
+      padding: 15px 0 40px 0; }
+      .mainWrap .content .deliveryContentDesc .deliveryContentDescMap {
+        width: 52%;
+        box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.6); }
+      .mainWrap .content .deliveryContentDesc .deliveryContentDescText {
+        width: 42%;
+        text-align: left;
+        font-size: 0.85em;
+        color: #6d6c6c; }
+        .mainWrap .content .deliveryContentDesc .deliveryContentDescText p {
+          line-height: 1.2em;
+          padding: 0 0 15px 0; }
+    .mainWrap .content .deliveryContentCost {
+      display: flex;
+      background-color: #222222;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 -15px 15px -15px; }
+      .mainWrap .content .deliveryContentCost .deliveryContentCostBlock {
+        text-align: center;
+        color: #00b4cd;
+        padding: 15px; }
+        .mainWrap .content .deliveryContentCost .deliveryContentCostBlock .deliveryContentCostDesc {
+          font-size: 0.9em; }
+    .mainWrap .content .deliveryContentCostSub {
+      text-align: left;
+      font-size: 1em;
+      color: #6d6c6c;
+      margin-bottom: 400px; }

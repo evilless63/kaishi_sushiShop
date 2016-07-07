@@ -510,43 +510,150 @@ footer {
   border-radius: 5px;
   cursor: pointer; }
 
-.mainWrap {
+.mainWrapAkcii {
   background-color: #f1f0f0;
   box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.6); }
-  .mainWrap .content {
-    width: 68.9% !important; }
-    .mainWrap .content h1.headerContent {
-      font-family: candara;
-      font-size: 1.3em;
+
+.centered {
+  text-align: center !important; }
+
+.content {
+  width: 68.9% !important; }
+
+h1.headerContent, h2.headerContent, .headerContent {
+  font-family: candara;
+  font-size: 1.3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 12px 0px; }
+
+.howItworks {
+  font-size: 1.1em;
+  padding: 22px 100px; }
+
+.akciiContent {
+  max-height: 940px;
+  overflow: auto; }
+  .akciiContent .akciiRowDays {
+    margin: 25px 0 0 0;
+    width: 92%; }
+  .akciiContent .akciiRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px; }
+    .akciiContent .akciiRow .akciiBlock {
+      color: black;
+      text-align: center; }
+      .akciiContent .akciiRow .akciiBlock .akciiBlockRound {
+        position: relative;
+        border-radius: 50%;
+        background-color: rgba(223, 222, 222, 0.7);
+        width: 180px;
+        height: 180px;
+        margin: 12px auto -193px auto;
+        text-align: center;
+        box-sizing: border-box;
+        font-family: candara;
+        font-size: 1.4em;
+        font-weight: 900;
+        padding: 70px 8% 0 8%; }
+      .akciiContent .akciiRow .akciiBlock .akciiBlockRound:hover {
+        box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.7); }
+    .akciiContent .akciiRow .akciiBlockDays {
+      color: black;
+      text-align: left; }
+      .akciiContent .akciiRow .akciiBlockDays .akciiBlockContainer {
+        position: relative;
+        margin: 12px auto -106px auto;
+        text-align: left;
+        box-sizing: border-box;
+        font-family: candara;
+        padding: 0px 40px 0 3%;
+        width: 300px;
+        color: white; }
+        .akciiContent .akciiRow .akciiBlockDays .akciiBlockContainer .akciiBlockContainerHeader {
+          text-transform: uppercase;
+          font-size: 1.3em;
+          font-weight: 900; }
+        .akciiContent .akciiRow .akciiBlockDays .akciiBlockContainer .akciiBlockContainerSubheader {
+          font-size: 1.2em;
+          padding: 7px 0; }
+        .akciiContent .akciiRow .akciiBlockDays .akciiBlockContainer .akciiBlockContainerDescription {
+          font-size: 0.9em;
+          line-height: 1.1em; }
+
+.akciiDesc {
+  width: 680px !important; }
+
+.headerContentDesc {
+  padding-left: 40px !important; }
+
+span.headerContentDesc {
+  color: #353637;
+  font-size: 0.8em;
+  font-weight: 900;
+  font-family: candara;
+  text-align: left;
+  display: block;
+  padding-left: 40px !important;
+  padding-right: 100px;
+  line-height: 1.2em; }
+
+.mainWrapAkcii {
+  background-color: #f1f0f0;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.6); }
+
+.akciiBlockRound {
+  color: #363738 !important;
+  padding: 70px 5% 0 5% !important; }
+
+.howItworks {
+  padding: 22px 40px	!important; }
+
+.headerContentDesc {
+  color: #757374 !important;
+  font-size: 0.85em !important;
+  line-height: 1.3em !important;
+  text-transform: uppercase !important;
+  padding-right: 20px !important; }
+
+.headerContentDescImg {
+  padding-left: 0px !important; }
+
+.akciiDesc {
+  width: 685px !important; }
+
+.ContentDescPromo {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 15px; }
+  .ContentDescPromo .ContentDescPromoBlock {
+    width: 20%; }
+    .ContentDescPromo .ContentDescPromoBlock .ContentDescPromoBlockHeader {
       text-transform: uppercase;
-      font-weight: bold;
-      padding: 12px 0px; }
-    .mainWrap .content .feedbackBlock {
-      border-top: 1px solid #d9d8d8;
-      display: flex;
-      justify-content: space-between;
-      padding: 12px 3px 0 3px; }
-      .mainWrap .content .feedbackBlock .feedbackBlockImageDesc {
-        width: 70%; }
-        .mainWrap .content .feedbackBlock .feedbackBlockImageDesc .feedbackBlockImage {
-          float: left; }
-          .mainWrap .content .feedbackBlock .feedbackBlockImageDesc .feedbackBlockImage img {
-            width: 51px;
-            height: 51px;
-            border-radius: 50%; }
-        .mainWrap .content .feedbackBlock .feedbackBlockImageDesc .feedbackBlockDesc .feedbackBlockDescRow {
-          display: flex;
-          font-family: arial;
-          font-size: 0.8em;
-          text-transform: none;
-          font-weight: normal;
-          padding: 5px 0px 0px 6px; }
-          .mainWrap .content .feedbackBlock .feedbackBlockImageDesc .feedbackBlockDesc .feedbackBlockDescRow .feedbackBlockDescName {
-            color: black; }
-          .mainWrap .content .feedbackBlock .feedbackBlockImageDesc .feedbackBlockDesc .feedbackBlockDescRow .feedbackBlockDescWhere {
-            color: #999999;
-            padding: 0 0 0 5px; }
-          .mainWrap .content .feedbackBlock .feedbackBlockImageDesc .feedbackBlockDesc .feedbackBlockDescRow .feedbackBlockDescComment {
-            color: #999999; }
-      .mainWrap .content .feedbackBlock .feedbackBlockStars {
-        margin-right: 16px; }
+      color: black;
+      font-size: 0.85em;
+      font-weight: 900;
+      font-family: candara;
+      text-align: center; }
+    .ContentDescPromo .ContentDescPromoBlock .ContentDescPromoBlockDesc {
+      padding-top: 10px;
+      font-size: 0.8em;
+      font-family: candara;
+      color: #757374;
+      line-height: 1.2em;
+      text-align: center; }
+    .ContentDescPromo .ContentDescPromoBlock .ContentDescPromoBlockTocart {
+      margin: 10px auto;
+      text-align: center; }
+      .ContentDescPromo .ContentDescPromoBlock .ContentDescPromoBlockTocart span {
+        background-image: linear-gradient(-71deg, #00bacd, #02808e);
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+        color: white;
+        text-transform: uppercase;
+        font-family: arial;
+        font-weight: bold;
+        font-size: 0.9em;
+        padding: 8px 10px;
+        border-radius: 5px;
+        cursor: pointer; }

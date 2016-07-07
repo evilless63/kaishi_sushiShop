@@ -1,0 +1,76 @@
+@import "akcii.sass"
+main
+	margin-bottom: 0px
+.mainWrap
+	background-color: rgb(241, 240, 240)
+	box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .6);
+	.content
+		width: 100% !important
+		padding: 15px
+		h1.headerContent, h2.headerContent, .headerContent
+			padding: 0 0 15px 0
+		font-family: $ff_candara	
+		.deliveryContentPromo
+			display: flex
+			background-color: $blue
+			justify-content: space-around
+			align-items: center
+			border-bottom: 2px solid #222222
+			margin: 0 -15px 
+			.deliveryContentPromoBlock	
+				text-align: center
+				color: $white
+				text-transform: uppercase
+				padding: 10px
+				.first
+					width: 16%
+				.second
+					width: 22%
+				.third
+					width: 30%		
+				.deliveryContentPromoDesc
+					font-size: 1.3em
+					span
+						font-size: 0.6em
+				.big
+					font-size: 1.6em 
+					font-weight: bold
+					span
+						font-size: 0.5em
+						font-weight: normal
+		
+		.deliveryContentDesc
+			display: flex
+			justify-content: space-between
+			align-items: flex-start
+			padding: 15px 0 40px 0
+			.deliveryContentDescMap
+				width: 52%
+				box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .6);
+			.deliveryContentDescText
+				width: 42%
+				text-align: left
+				font-size: 0.85em
+				color: #6d6c6c
+				p
+					line-height: 1.2em
+					padding: 0 0 15px 0
+
+		.deliveryContentCost
+			display: flex
+			background-color: #222222
+			justify-content: space-around
+			align-items: center
+			margin: 0 -15px 15px -15px
+			.deliveryContentCostBlock
+				text-align: center
+				color: $blue
+				padding: 15px
+				.deliveryContentCostDesc
+					font-size: 0.9em	
+
+		.deliveryContentCostSub
+			text-align: left
+			font-size: 1em
+			color: #6d6c6c
+			margin-bottom: 400px 					
