@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/cart.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/button.css">
+	<!--[if lt IE 9]>
+		<script src="bower/html5shiv/dist/html5shiv.js"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="bower/css3-mediaqueries-js/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<title>sushi</title>
+</head>
+<body>
+	<header>
+		<div class="topMenuWrap">
+			<div class="container row toSpaceBetween">
+				<div class="topMenu">
+					<ul class="row toSpaceBetween">
+						<li><a href="dostavka.html">Доставка и оплата</a></li>
+						<li><a href="akcii.html">Акции</a></li>
+						<li><a href="kontakty.html">Контакты</a></li>
+						<li><a href="otzyvy.html">Отзывы</a></li>
+						<li><a href="novosti.html">Новости</a></li>
+					</ul>
+				</div>
+				<div class="registerAndSearch">
+					<ul class="row toSpaceBetween alignBaseline">
+						<li><a href="">Вход</a></li>
+						<span>/</span>
+						<li><a href="">Регистрация</a></li>
+						<input type="text" placeholder="Поиск">
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<div class="informationTopPath container row toSpaceBetween alignCenter">
+			<div class="workInfo">
+				<div class="phone">(846) 2030-454</div>
+				<div class="workHours">
+					Работаем <span>с 9:00</span> до <span>00.00</span><br>
+					БЕЗ ВЫХОДНЫХ !
+				</div>
+			</div>
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt="Каиши суши"></a>
+				<div class="line"></div>
+				<p>Доставка в Самаре бесплатно</p>
+			</div>
+			<div class="cart">
+				ВАША КОРЗИНА:<br>
+				0 товаров<br>
+				0 руб.<br>
+				<div class="cart_button "><i class="fa fa-shopping-cart" aria-hidden="true"></i>Оформить</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="mainWrap mainWrapAkcii container row toSpaceBetween">
+			<div class="content">
+				<h1 class="headerContent">Оформление заказа</h1>
+				<div class="row">
+					<div class="cartProductsBlock">
+						<div class="row cartProductsBlockContent">
+							<img class="cartProductsBlockImg" src="images/user/sushi/sushiImg.jpg" alt="">
+							<div class="cartProductsBlockName">Канада</div>
+							<div class="cartProductsBlockCount row">
+								<div class="cartProductsBlockCountMinus">
+									<img src="images/icons/misc__minus.svg" alt="">
+								</div>
+								<input type="text" class="cartProductsBlockInputcount" value="1">
+								<div class="cartProductsBlockPlus" >
+									<img src="images/icons/misc__plus.svg" alt="">
+								</div>
+							</div>
+							<div class="cartProductsBlockCost">460 р.</div>
+							<div class="cartProductsBlockDelete">
+								<img src="images/icons/misc__delete.svg" alt="">
+							</div>
+						</div>
+						<div class="row cartProductsBlockContent">
+							<img class="cartProductsBlockImg" src="images/user/sushi/sushiImg.jpg" alt="">
+							<div class="cartProductsBlockName">Канада</div>
+							<div class="cartProductsBlockCount row">
+								<div class="cartProductsBlockCountMinus">
+									<img src="images/icons/misc__minus.svg" alt="">
+								</div>
+								<input type="text" class="cartProductsBlockInputcount" value="1">
+								<div class="cartProductsBlockPlus">
+									<img src="images/icons/misc__plus.svg" alt="">
+								</div>
+							</div>
+							<div class="cartProductsBlockCost">460 р.</div>
+							<div class="cartProductsBlockDelete">
+								<img src="images/icons/misc__delete.svg" alt="">
+							</div>
+						</div>
+						<div class="row cartProductsBlockContent">
+							<img class="cartProductsBlockImg" src="images/user/sushi/sushiImg.jpg" alt="">
+							<div class="cartProductsBlockName">Канада</div>
+							<div class="cartProductsBlockCount row">
+								<div class="cartProductsBlockCountMinus">
+									<img src="images/icons/misc__minus.svg" alt="">
+								</div>
+								<input type="text" class="cartProductsBlockInputcount" value="1">
+								<div class="cartProductsBlockPlus">
+									<img src="images/icons/misc__plus.svg" alt="">
+								</div>
+							</div>
+							<div class="cartProductsBlockCost">460 р.</div>
+							<div class="cartProductsBlockDelete">
+								<img src="images/icons/misc__delete.svg" alt="">
+							</div>
+						</div>
+						<div class="row">
+							<div class="cartProductsBlockComment">
+								<div class="addCommentButton">
+									Добавить комментарий к заказу
+								</div>
+								<textarea rows="5" cols="60" class="addCommentField" placeholder="Комментарий к заказу..."></textarea>
+							</div>	
+							<div class="cartProductsBlockComment">
+								<a class="cartProductsBlockCommentBacktomenu" href="sushi.html">Вернуться в меню</a>
+							</div>
+						</div>
+					</div>
+					<div class="cartPaymentBlock">
+						<div class="cartPaymentBlockDesc">
+							<span>Сумма заказа: 920 р.</span>
+							<span>Стоимость доставки: бесплатно</span>
+							<span>номер скидочной карты</span>
+						</div>
+						<div class="cartPaymentBlockCartnumber">
+							<input type="text" id="cartPaymentBlockCartnumber1" maxlength="1" class="cartPaymentBlockCartnumberInput">
+							<input type="text" id="cartPaymentBlockCartnumber2" maxlength="1" class="cartPaymentBlockCartnumberInput">
+							<input type="text" id="cartPaymentBlockCartnumber3" maxlength="1" class="cartPaymentBlockCartnumberInput">
+							<input type="text" id="cartPaymentBlockCartnumber4" maxlength="1" class="cartPaymentBlockCartnumberInput">
+							<input type="text" id="cartPaymentBlockCartnumber5" maxlength="1" class="cartPaymentBlockCartnumberInput">
+							<input type="text" id="cartPaymentBlockCartnumber6" maxlength="1" class="cartPaymentBlockCartnumberInput">
+						</div>
+						<div class="cartPaymentBlockItogo">
+							Итого: 920 р.
+						</div>
+						<div class="cartPaymentBlockMisc">
+							<span>В ваш заказ добавлено 2 бесплатных набора для суши.</span>
+							<span class="question">Нужны дополнительные наборы?</span>
+							<div class="cartPaymentBlockMiscRow">
+								<img class="cartPaymentBlockMiscImg" src="images/user/sushi/sushi.png" alt="">
+								<div class="cartPaymentBlockMiscCost">
+									39 р.
+								</div>
+								<div class="cartPaymentBlockMiscBuyButton">Купить</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="cartRow blackBackground">
+					<div class="cartPaymentRegistration">
+						<h2 class="headerContent">Оформление</h2>
+						<form id="cartRegistrationForm" class="cartRegistrationForm" action="">
+							<input type="text" class="registrationFormName" name="registrationFormName" placeholder="*Ваше имя" required>
+							<input type="text" class="registrationFormSurname" name="registrationFormSurname" placeholder="*Ваша Фамилия" required>
+							<input type="text" class="registrationFormPhone" name="registrationFormPhone" placeholder="*Телефон" required>
+							<input type="text" class="registrationFormAdress" name="registrationFormAdress" placeholder="*Адрес" required>
+							<textarea name="registrationFormTextarea" id="registrationFormTextarea" cols="30" rows="3" placeholder="Добавить примечание к адресу"></textarea>
+						</form>
+					</div>
+					<div class="cartPaymentMethods">
+						<h2 class="headerContent">Способы оплаты</h2>
+							<div class="row">
+								<div class="cartPaymentMethodsBlock cartPaymentMethodsCache">Наличными курьеру</div>
+								<div class="cartPaymentMethodsBlock cartPaymentMethodsCart">Банковской картой</div>
+								<div class="cartPaymentMethodsBlock cartPaymentMethodsYandex">Яндекс деньги</div>
+							</div>
+							<div class="row">
+								<div class="cartPaymentMethodsBlock cartPaymentMethodsQiwi">Qiwi</div>
+								<div class="cartPaymentMethodsBlock cartPaymentMethodsWebmoney">Webmoney</div>
+								<div class="cartPaymentMethodsBlock cartPaymentMethodsCourercart">Картой курьеру</div>
+							</div>
+							<div class="row">
+								<div class="cartPaymentMethodsBlockSdacha ">С какой суммы требуется сдача ?</div>
+								<div class="cartPaymentMethodsBlockSdacha "><input type="text" id="cartPaymentMethodsSdachaInput" /></div>
+								<div class="cartPaymentMethodsBlockSdacha "><label for="cartPaymentMethodsSdachaCheckbox">Без сдачи</label><input type="checkbox" id="cartPaymentMethodsSdachaCheckbox" /></div>
+							</div>
+							<div class="row to-right">
+								<div class="ContentDescPromoBlockTocart">
+									<span>Заказать</span>
+								</div>
+							</div>
+					</div>
+				</div>
+				<h2 class="headerContent center">К вашему заказу предлагаем</h2>
+				<div class="aditionallyWrap cartRow">
+					<img class="cartLeftArrow" src="images/icons/misc__leftArrow.svg">
+					<div class="aditionallyBlocks cartRow">
+						<div class="sushiBlock">
+							<img src="images/user/sushi/sushiImg.jpg" alt="Суши">
+							<h2 class="sushiBlockHeader">Суши кунсей</h2>
+							<div class="sushiBlockDesc">Рис, лосось х/к 35 г.</div>
+							<div class="sushiBlockGet">
+								<div class="sushiBlockGetCost">96 р.</div>
+								<div class="sushiBlockGetBusket">
+									В корзину
+								</div>
+							</div>
+						</div>
+						<div class="sushiBlock">
+							<img src="images/user/sushi/sushiImg.jpg" alt="Суши">
+							<h2 class="sushiBlockHeader">Суши кунсей</h2>
+							<div class="sushiBlockDesc">Рис, лосось х/к 35 г.</div>
+							<div class="sushiBlockGet">
+								<div class="sushiBlockGetCost">96 р.</div>
+								<div class="sushiBlockGetBusket">
+									В корзину
+								</div>
+							</div>
+						</div>
+						<div class="sushiBlock">
+							<img src="images/user/sushi/sushiImg.jpg" alt="Суши">
+							<h2 class="sushiBlockHeader">Суши кунсей</h2>
+							<div class="sushiBlockDesc">Рис, лосось х/к 35 г.</div>
+							<div class="sushiBlockGet">
+								<div class="sushiBlockGetCost">96 р.</div>
+								<div class="sushiBlockGetBusket">
+									В корзину
+								</div>
+							</div>
+						</div>
+						<div class="sushiBlock">
+							<img src="images/user/sushi/sushiImg.jpg" alt="Суши">
+							<h2 class="sushiBlockHeader">Суши кунсей</h2>
+							<div class="sushiBlockDesc">Рис, лосось х/к 35 г.</div>
+							<div class="sushiBlockGet">
+								<div class="sushiBlockGetCost">96 р.</div>
+								<div class="sushiBlockGetBusket">
+									В корзину
+								</div>
+							</div>
+						</div>
+						<div class="sushiBlock">
+							<img src="images/user/sushi/sushiImg.jpg" alt="Суши">
+							<h2 class="sushiBlockHeader">Суши кунсей</h2>
+							<div class="sushiBlockDesc">Рис, лосось х/к 35 г.</div>
+							<div class="sushiBlockGet">
+								<div class="sushiBlockGetCost">96 р.</div>
+								<div class="sushiBlockGetBusket">
+									В корзину
+								</div>
+							</div>
+						</div>
+					</div>
+					<img class="cartRightArrow" src="images/icons/misc__rightArrow.svg">
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="footerContainer container">
+			<div class="footerMenu">
+				<div class="footerMenuFood footerMenuBlock">
+					<div class="footerMenuBlockHeader">
+						Меню
+					</div>
+					<div class="footerMenuBlockContent">
+						<ul>
+							<li><a href="">Суши</a></li>
+							<li><a href="">Инари суши</a></li>
+							<li><a href="">Горячие роллы</a></li>
+							<li><a href="">Сеты</a></li>
+							<li><a href="">Гунканы</a></li>
+						</ul>
+						<ul>
+							<li><a href="">Закуски</a></li>
+							<li><a href="">Пицца</a></li>
+							<li><a href="">Напитки</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footerMenuSupport footerMenuBlock">
+					<div class="footerMenuBlockHeader">
+						Поддержка
+					</div>
+					<div class="footerMenuBlockContent">
+						<ul>
+							<li><a href="akcii.html">Акции</a></li>
+							<li><a href="otzyvy.html">Отзывы</a></li>
+							<li><a href="kontakty.html">Контакты</a></li>
+							<li><a href="vakansii.html">Вакансии</a></li>
+							<li><a href="dostavka.html">Доставка и вакансии</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footerMenuPartners footerMenuBlock">
+					<div class="footerMenuBlockHeader">
+						Партнерам
+					</div>
+					<div class="footerMenuBlockContent">
+						<ul>
+							<li><a href="">Распространение рекламных материалов</a></li>
+							<li><a href="">Партнерская программа</a></li>
+							<li><a href="">Франчайзинг</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footerSocial">(917) 2030 454</div>
+		</div>
+	</footer>
+	<script src="bower/jquery/dist/jquery.js"></script>
+	<script src="bower/moff/dist/moff.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

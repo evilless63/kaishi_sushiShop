@@ -66,3 +66,153 @@ a.sushi
 				box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3)
 				background-image: linear-gradient(180deg, rgb(0, 162, 183), rgb(7, 146, 165))	
 				cursor: pointer
+				position: relative
+			.sushiBlockGetBusket:before
+				content: url(../images/icons/misc__cart.png)
+				width: 20px
+				border-top-left-radius: 5px
+				border-bottom-left-radius: 5px
+				position: absolute
+				padding: 3px 2px 2px 1px
+				top: 0px
+				left: 0px
+				background-color: #353737
+
+.sushiProfailWrapper
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background-color: rgba(29, 29, 27, .48)	
+	overflow: hidden	
+	display: none
+	.sushiProfailArea
+		width: 580px
+		margin: 150px auto 0 auto 	
+		background-color: $white
+		display: flex
+		flex-direction: column
+		border-radius: 5px
+		position: relative
+		h3
+			background-color: #d6f2f5
+			padding: 16px 0px 5px 25px
+			font-family: $ff_arial
+			font-weight: bold
+			font-size: 1.2em
+			color: #363738
+			display: block
+			border-top-left-radius: 5px
+			border-top-right-radius: 5px
+		.tabs
+			display: block
+			width: 100%
+			.tabs__caption
+				display: flex
+				margin: -25px 0px 0px 0px
+				padding-left: 240px
+				display: flex
+				border-bottom: 1px solid $blue
+				align-items: baseline
+				li.active
+					font-family: $ff_arial
+					font-size: 1em
+					color: #4e4c62
+					background-color: #fff
+					border-top-left-radius: 5px
+					border-top-right-radius: 5px
+					border-top: 1px solid $blue
+					border-right: 1px solid $blue
+					border-left: 1px solid $blue
+					border-bottom: 1px solid #fff
+					margin-bottom: -1px
+					padding: 3px 3px
+					font-weight: bold
+				li
+					font-family: $ff_arial
+					font-size: 0.7em	
+					color: #4e4c62
+					border: none
+					background-color: transparent
+					margin: 0px 5px
+					font-weight: bold
+					text-transform: uppercase
+					cursor: pointer
+			.tabs__content
+				display: none;
+				.tabs__contentDesc
+					display: flex
+					flex-direction: column
+					align-items: center
+					span
+						display: block
+						font-size: 0.8em
+						font-family: $ff_arial
+						padding: 3px 0
+						color: #4e4c62
+				.tabs__contentBuy
+					width: percentage(200/580)
+					span
+						font-size: 0.55em
+						color: #4e4c62
+						font-family: $ff_arial
+						text-align: center 
+					.tabs__contentBuyBlock
+						display: flex
+						justify-content: space-around
+						align-items: flex-start
+						img
+							width: 30px
+						span
+							font-size: 1.5em
+							font-weight: bold
+							color: #4e4c62
+							font-family: $ff_arial
+							margin-bottom: 15px	
+							span.min
+								font-size: 0.5em
+					.sushiBlockGetBusketProfail
+						color: $white
+						font-family: $ff_candara
+						font-size: 1em
+						padding: 7px 7px 7px 40px
+						border-radius: 5px
+						box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3)
+						background-image: linear-gradient(180deg, rgb(0, 162, 183), rgb(7, 146, 165))	
+						cursor: pointer
+						position: relative
+						text-transform: uppercase
+						width: 85px
+						margin: 30px auto 0px auto
+					.sushiBlockGetBusketProfail:before
+						content: url(../images/icons/misc__cart.png)
+						width: 22px
+						border-top-left-radius: 5px
+						border-bottom-left-radius: 5px
+						position: absolute
+						padding: 9px 2px 4px 8px
+						top: 0px
+						left: 0px
+						background-color: #353737						
+			.tabs__content.active
+				display: flex
+				justify-content: space-between
+				padding: 15px
+
+
+.cartPaymentMethodsCache:before
+	content: url(../images/icons/payment__cache.png)
+.cartPaymentMethodsCart:before
+	content: url(../images/icons/payment__bankcart.png)
+.cartPaymentMethodsYandex:before
+	content: url(../images/icons/payment__yandexmoney.png)
+.cartPaymentMethodsQiwi:before
+	content: url(../images/icons/payment__qiwi.png)
+.cartPaymentMethodsWebmoney:before
+	content: url(../images/icons/payment__webmoney.png)
+.cartPaymentMethodsCourercart:before
+	content: url(../images/icons/payment__courercart.png)
+	

@@ -1,0 +1,224 @@
+@import "main.sass"
+
+.mainWrap
+	box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.6);
+	.content
+		width: 100%
+		background-color: rgb(241, 240, 240)
+		box-shadow: inset 0px 1px 3px rgba(0, 0, 0, .6);
+		h1.lcContentHeader
+			font-family: $ff_candara
+			font-size: 1.2em
+			text-align: center
+			font-weight: bold	
+			text-transform: uppercase
+			padding: 18px 0 30px 0
+		.lcContentRow
+			display: flex
+			justify-content: space-around
+			border: 2px solid $blue
+			width: 830px
+			margin: 0 auto
+			.lcContentBlock
+				text-align: center
+				display: flex
+				justify-content: space-between
+				align-items: center
+				margin: 15px 0px
+				.lcContentBlockDesc
+					font-family: $ff_arial
+					font-size: 1.4em
+				.lcContentBlockImg
+					width: 39px !important
+					height: 47px !important
+				img
+					width: 75px
+					height: 47px
+					
+				.contactsContentBlockImg
+					width: 75px
+				span
+					font-family: $ff_arial
+					font-size: 1.2em
+					padding: 6px 0	
+					display: block
+		.lcContentMap
+			margin: 20px auto 270px auto	
+			width: 922px	
+
+main
+	margin-bottom: 0px	
+
+.tabs__content
+	display: none
+
+.tabs__content.active
+	display: flex
+	justify-content: space-between
+	padding: 0px 15px 15px 15px	 
+	flex-wrap: wrap		
+
+.lcContentTabs
+	.tabs__caption		
+		display: flex
+		justify-content: flex-start
+		padding-left: 55px
+		margin-top: 20px
+		li
+			font-family: $ff_arial
+			font-size: 1.3em
+			padding: 7px 7px
+			margin-right: 20px
+			cursor: pointer
+		li.active	
+			background-color: #fff
+			border-top-left-radius: 5px
+			border-top-right-radius: 5px
+	.zakaz
+		.zakazRow	
+			display: flex
+			justify-content: space-between
+			padding: 20px 65px 20px 55px
+			margin: 0 -15px 0 -15px
+			color: #000
+			background: #fff
+			font-family: $ff_arial
+			font-size: 1.2em	
+			border-bottom: 2px solid $blue
+			align-items: center
+			width: 100%
+			.zakazRowSchedule
+				background-image: linear-gradient(-71deg, #00bacd, #02808e)
+				box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4)
+				color: #fff
+				text-transform: uppercase
+				font-family: $ff_arial
+				font-weight: bold
+				font-size: 0.8em
+				padding: 12px 12px
+				border-radius: 5px
+				cursor: pointer	
+				color: #fff
+			.zakazRowSpoiler
+				cursor: pointer
+		.spoilerContent
+			.zakazRowSpoilerWrap			
+				display: flex
+				justify-content: space-between
+				padding: 20px 0px 20px 0px
+				margin: 0px 40px 0px 40px
+				color: #363738
+				font-family: $ff_arial
+				font-size: 0.8em
+				font-weight: bold	
+				border-bottom: 2px solid #007f8d
+				align-items: center
+				width: 840px
+				.zakazRowSpoilerWrapName
+					margin-left: -95px
+					margin-right: 50px
+				.zakazRowSpoilerWrapCart
+					color: $white
+					font-family: $ff_candara
+					font-size: 1.2em
+					padding: 7px 7px 7px 40px
+					border-radius: 5px
+					box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3)
+					background-image: linear-gradient(180deg, rgb(0, 162, 183), rgb(7, 146, 165))	
+					cursor: pointer
+					position: relative
+					text-transform: uppercase
+					width: 85px
+					// margin: 30px auto 0px auto
+				.zakazRowSpoilerWrapCart:before
+					content: url(../images/icons/misc__cart.png)
+					width: 22px
+					border-top-left-radius: 5px
+					border-bottom-left-radius: 5px
+					position: absolute
+					padding: 9px 2px 4px 8px
+					top: 0px
+					left: 0px
+					background-color: #353737	
+			.zakazRowSpoilerDesc
+				text-align: left
+				padding: 20px 0px 20px 0px
+				margin: 0px 40px 0px 40px
+				.zakazRowScheduleDesc
+					background-image: linear-gradient(-71deg, #00bacd, #02808e)
+					box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4)
+					color: #fff
+					font-family: $ff_arial
+					font-size: 1.1em
+					padding: 12px 12px
+					border-radius: 5px
+					cursor: pointer	
+					color: #fff	
+					display: block
+					width: 135px	
+				span
+					display: block
+					font-family: $ff_arial
+					font-size: 1.1em
+					color: #353636	
+					padding: 12px 0	
+		.adressRow
+			display: flex
+			justify-content: space-around
+			padding: 20px 65px 20px 55px
+			margin: 0 -15px 0 -15px
+			color: #353636
+			background: #fff
+			font-family: $ff_arial
+			font-size: 1.1em	
+			border-bottom: 2px solid $blue
+			align-items: flex-start
+			width: 100%	
+			span
+				display: block
+			.adressRowEdit	
+				cursor: pointer
+				margin: 0 20px
+			.adressRowDelete
+				cursor: pointer
+				img
+					width: 22px
+		.row
+			padding: 20px 65px 20px 55px
+			margin: 0 -15px 0 -15px				
+			.adressAdd, .passwordEdit
+				background-image: linear-gradient(-71deg, #00bacd, #02808e)
+				box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4)
+				color: #fff
+				font-family: $ff_arial
+				font-size: 1.1em
+				padding: 12px 12px
+				border-radius: 5px
+				cursor: pointer	
+				color: #fff	
+				display: block
+				width: 135px
+			
+								
+		.settingsRow
+			display: flex
+			justify-content: space-between
+			padding: 20px 65px 20px 55px
+			margin: 0 -15px 0 -15px
+			color: #000
+			background: #fff
+			font-family: $ff_arial
+			font-size: 1.2em	
+			border-bottom: 2px solid $blue
+			align-items: center
+			width: 100%
+			input[type="text"]
+				padding: 7px 10px
+				text-align: center
+				border-radius: 5px
+				border: 2px solid $blue
+				margin-right: 160px
+				width: 160px
+				font-size: 1.1em
+			input[type="checkbox"]	
+				margin-right: 240px
