@@ -20,15 +20,32 @@ $(document).ready(function(){
 	  }
 	);
 
-	$( "#registration" ).click(
+	$( "#login" ).click(
 		function(){
-			$( ".registrationWrapper" ).css( "display", "block" );	
+			$( ".loginWrapper" ).css( "display", "block" );	
 		});
-	$( ".gdeZakryt" ).click(
+	
+	$(".closeModalLogin").click(
+		function(){
+			$(".loginWrapper").css("display", "none");
+		});	
+	
+	$( ".closeModalRegistration" ).click(
 		function(){
 			$( ".registrationWrapper" ).css( "display", "none" );
 		});
 	
+	$( "#registration" ).click(
+		function(){
+			$( ".registrationWrapper" ).css( "display", "block" );	
+		});
+
+	$( ".registrationLink").click(
+		function(){
+			$(".loginWrapper").css("display", "none");
+			$( ".registrationWrapper" ).css( "display", "block" );
+		});
+
 	$( ".sushiBlockGetBusket" ).click(
 		function(){
 			$( ".sushiProfailWrapper" ).css( "display", "block" );	
@@ -69,9 +86,6 @@ $(document).ready(function(){
 	// 	}
 	// })
 
-
-	$(".spoiler").spoiler({includePadding: false});
-
 });
 
 (function($) {
@@ -85,6 +99,8 @@ $(function() {
 
 });
 })(jQuery);
+
+
 
 
 

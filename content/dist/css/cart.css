@@ -449,72 +449,6 @@ footer {
       top: -3px;
       right: 86px; }
 
-.registrationWrapper {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(29, 29, 27, 0.48);
-  overflow: hidden;
-  display: none; }
-  .registrationWrapper .registrationArea {
-    width: 565px;
-    margin: 190px auto 0 auto;
-    background-color: white;
-    display: flex; }
-    .registrationWrapper .registrationArea .registrationForm {
-      width: 90%;
-      border-right: 1px solid #00b4cd;
-      padding: 13px 26px; }
-      .registrationWrapper .registrationArea .registrationForm input[type="text"] {
-        font-family: arial;
-        font-size: 0.9em;
-        color: #9f9f9f;
-        width: 93%;
-        padding: 4px 10px;
-        border-radius: 5px;
-        box-shadow: none;
-        margin-bottom: 12px;
-        border: 1px solid #9f9f9f; }
-      .registrationWrapper .registrationArea .registrationForm input[type="text"]::-webkit-input-placeholder::first-letter {
-        color: red; }
-      .registrationWrapper .registrationArea .registrationForm .registrationFormHeader {
-        font-family: arial;
-        font-weight: bold;
-        font-size: 0.9em;
-        text-transform: uppercase;
-        padding-bottom: 10px; }
-      .registrationWrapper .registrationArea .registrationForm .registrationFormSubmit {
-        text-align: center;
-        margin: 10px auto; }
-        .registrationWrapper .registrationArea .registrationForm .registrationFormSubmit span {
-          background-image: linear-gradient(-71deg, #00bacd, #02808e);
-          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-          color: white;
-          text-transform: uppercase;
-          font-family: arial;
-          font-weight: bold;
-          font-size: 0.7em;
-          padding: 8px 10px;
-          border-radius: 5px;
-          cursor: pointer; }
-    .registrationWrapper .registrationArea .registrationSocial {
-      padding: 13px 26px;
-      text-align: center; }
-      .registrationWrapper .registrationArea .registrationSocial .registrationSocialHeader {
-        font-family: arial;
-        font-size: 0.9em; }
-      .registrationWrapper .registrationArea .registrationSocial .registrationSocialRow {
-        display: flex;
-        margin: 0 auto;
-        justify-content: center; }
-        .registrationWrapper .registrationArea .registrationSocial .registrationSocialRow .registrationSocialBlock {
-          margin: 8px 5px 0px 5px;
-          cursor: pointer; }
-
 .gdeZakryt {
   background-image: linear-gradient(-71deg, #00bacd, #02808e);
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
@@ -565,6 +499,290 @@ footer {
   position: absolute;
   top: 3px;
   right: 5px;
+  cursor: pointer; }
+
+.loginWrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(29, 29, 27, 0.48);
+  overflow: hidden;
+  display: none; }
+  .loginWrapper .loginArea {
+    width: 760px;
+    margin: 90px auto 0 auto;
+    background-color: white;
+    display: flex;
+    border-radius: 5px;
+    position: relative; }
+    .loginWrapper .loginArea .loginForm {
+      width: 50%;
+      border-right: 1px solid #eeeeee;
+      padding: 20px 26px;
+      background: #fff;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .loginWrapper .loginArea .loginForm span {
+        font-size: 0.8em;
+        color: #9f9f9f;
+        padding: 10px;
+        font-family: arial;
+        display: block; }
+      .loginWrapper .loginArea .loginForm .loginFormAnother {
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+        .loginWrapper .loginArea .loginForm .loginFormAnother span.registrationLink {
+          color: #00b4cd;
+          text-decoration: underline;
+          cursor: pointer; }
+      .loginWrapper .loginArea .loginForm .loginFormMisc {
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+        .loginWrapper .loginArea .loginForm .loginFormMisc span {
+          color: #000;
+          text-decoration: underline;
+          cursor: pointer; }
+          .loginWrapper .loginArea .loginForm .loginFormMisc span a {
+            text-decoration: none;
+            color: #fff; }
+        .loginWrapper .loginArea .loginForm .loginFormMisc .loginFormButton {
+          text-align: center;
+          margin: 10px auto; }
+          .loginWrapper .loginArea .loginForm .loginFormMisc .loginFormButton span {
+            background-image: linear-gradient(-71deg, #00bacd, #02808e);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+            color: white;
+            text-transform: uppercase;
+            font-family: arial;
+            font-weight: bold;
+            font-size: 0.7em;
+            padding: 8px 10px;
+            border-radius: 5px;
+            cursor: pointer; }
+      .loginWrapper .loginArea .loginForm input[type="text"] {
+        font-family: arial;
+        font-size: 0.8em;
+        color: #9f9f9f;
+        width: 93%;
+        padding: 15px 10px;
+        box-shadow: none;
+        margin-bottom: 12px;
+        border: 1px solid #eeeeee; }
+      .loginWrapper .loginArea .loginForm input[type="text"]::-webkit-input-placeholder::first-letter {
+        color: #eeeeee; }
+      .loginWrapper .loginArea .loginForm .loginFormHeader {
+        font-family: arial;
+        font-size: 1.3em;
+        padding-bottom: 20px;
+        text-align: center; }
+    .loginWrapper .loginArea .loginSocial {
+      background: #fafafa;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px; }
+      .loginWrapper .loginArea .loginSocial span {
+        color: #989598;
+        font-family: arial;
+        font-size: 0.8em; }
+      .loginWrapper .loginArea .loginSocial .loginSocialVk {
+        font-family: arial;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 0.7em;
+        padding: 10px 25px 10px 45px;
+        border-radius: 5px;
+        background: #426b9a;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        position: relative;
+        cursor: pointer; }
+      .loginWrapper .loginArea .loginSocial .loginSocialVk:before {
+        content: url(../images/icons/lgrg__vk.jpg);
+        position: absolute;
+        left: 8px;
+        top: 4px; }
+      .loginWrapper .loginArea .loginSocial .loginSocialOdn {
+        font-family: arial;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 0.7em;
+        padding: 10px 10px 10px 25px;
+        border-radius: 5px;
+        background: #ff8400;
+        margin-bottom: 20px;
+        position: relative;
+        cursor: pointer; }
+      .loginWrapper .loginArea .loginSocial .loginSocialOdn:before {
+        content: url(../images/icons/lgrg__od.jpg);
+        position: absolute;
+        left: 5px;
+        top: 3px; }
+      .loginWrapper .loginArea .loginSocial .loginSocialFb {
+        font-family: arial;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 0.7em;
+        padding: 10px 25px 10px 50px;
+        border-radius: 5px;
+        background: #4c68b3;
+        position: relative;
+        cursor: pointer; }
+      .loginWrapper .loginArea .loginSocial .loginSocialFb:before {
+        content: url(../images/icons/lgrg__fb.jpg);
+        position: absolute;
+        left: 15px;
+        top: 5px; }
+
+.registrationWrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(29, 29, 27, 0.48);
+  overflow: hidden;
+  display: none; }
+  .registrationWrapper .registrationArea {
+    width: 760px;
+    margin: 90px auto 0 auto;
+    background-color: white;
+    display: flex;
+    border-radius: 5px;
+    position: relative; }
+    .registrationWrapper .registrationArea .registrationForm {
+      width: 50%;
+      border-right: 1px solid #eeeeee;
+      padding: 20px 26px;
+      background: #fff;
+      border-bottom-left-radius: 5px;
+      border-top-left-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: left; }
+      .registrationWrapper .registrationArea .registrationForm input[type="text"] {
+        font-family: arial;
+        font-size: 0.8em;
+        color: #9f9f9f;
+        width: 93%;
+        padding: 15px 10px;
+        box-shadow: none;
+        margin-bottom: 12px;
+        border: 1px solid #eeeeee; }
+      .registrationWrapper .registrationArea .registrationForm input[type="text"]::-webkit-input-placeholder::first-letter {
+        color: #eeeeee; }
+      .registrationWrapper .registrationArea .registrationForm .polzSoglWrapper {
+        display: flex;
+        justify-content: flex-start;
+        text-align: left;
+        align-items: center; }
+        .registrationWrapper .registrationArea .registrationForm .polzSoglWrapper .polzSogl + label {
+          font-family: arial;
+          font-size: 0.9em;
+          color: #00b4cd; }
+      .registrationWrapper .registrationArea .registrationForm .polzSoglLink {
+        text-decoration: underline;
+        color: #333333; }
+      .registrationWrapper .registrationArea .registrationForm .registrationFormHeader {
+        font-family: arial;
+        font-size: 1.3em;
+        padding-bottom: 20px;
+        text-align: center; }
+      .registrationWrapper .registrationArea .registrationForm .registrationFormSubmit {
+        text-align: center;
+        margin: 10px auto; }
+        .registrationWrapper .registrationArea .registrationForm .registrationFormSubmit span {
+          background-image: linear-gradient(-71deg, #00bacd, #02808e);
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+          color: white;
+          text-transform: uppercase;
+          font-family: arial;
+          font-weight: bold;
+          font-size: 0.7em;
+          padding: 8px 10px;
+          border-radius: 5px;
+          cursor: pointer; }
+    .registrationWrapper .registrationArea .loginSocial {
+      background: #fafafa;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px; }
+      .registrationWrapper .registrationArea .loginSocial span {
+        color: #989598;
+        font-family: arial;
+        font-size: 0.8em; }
+      .registrationWrapper .registrationArea .loginSocial .loginSocialVk {
+        font-family: arial;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 0.7em;
+        padding: 10px 25px 10px 45px;
+        border-radius: 5px;
+        background: #426b9a;
+        margin-bottom: 20px;
+        margin-top: 40px;
+        position: relative;
+        cursor: pointer; }
+      .registrationWrapper .registrationArea .loginSocial .loginSocialVk:before {
+        content: url(../images/icons/lgrg__vk.jpg);
+        position: absolute;
+        left: 8px;
+        top: 4px; }
+      .registrationWrapper .registrationArea .loginSocial .loginSocialOdn {
+        font-family: arial;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 0.7em;
+        padding: 10px 10px 10px 25px;
+        border-radius: 5px;
+        background: #ff8400;
+        margin-bottom: 20px;
+        position: relative;
+        cursor: pointer; }
+      .registrationWrapper .registrationArea .loginSocial .loginSocialOdn:before {
+        content: url(../images/icons/lgrg__od.jpg);
+        position: absolute;
+        left: 5px;
+        top: 3px; }
+      .registrationWrapper .registrationArea .loginSocial .loginSocialFb {
+        font-family: arial;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 0.7em;
+        padding: 10px 25px 10px 50px;
+        border-radius: 5px;
+        background: #4c68b3;
+        position: relative;
+        cursor: pointer; }
+      .registrationWrapper .registrationArea .loginSocial .loginSocialFb:before {
+        content: url(../images/icons/lgrg__fb.jpg);
+        position: absolute;
+        left: 15px;
+        top: 5px; }
+
+.closeModalLogin, .closeModalRegistration {
+  position: absolute;
+  top: 10px;
+  right: 25px;
   cursor: pointer; }
 
 .mainWrapAkcii {

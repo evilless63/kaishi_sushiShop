@@ -29,7 +29,7 @@
 				</div>
 				<div class="registerAndSearch">
 					<ul class="row toSpaceBetween alignBaseline">
-						<li><a href="">Вход</a></li>
+						<li id="login"><a href="#login">Вход</a></li>
 						<span>/</span>
 						<li id="registration"><a href="#registration">Регистрация</a></li>
 						<input type="text" placeholder="Поиск">
@@ -219,8 +219,41 @@
 			</div>
 		</div>
 	</footer>
+	<div class="loginWrapper">
+		<div class="loginArea">
+			<div class="closeModalLogin">
+				<img src="images/icons/close.png" alt="Закрыть окно">
+			</div>
+			<form action="" id="loginForm" class="loginForm">
+				<h3 class="loginFormHeader">Вход</h3>
+				<input type="text" class="loginFormEmail" name="loginFormEmail" id="loginFormEmail" placeholder="E-mail" required>
+				<input type="text" class="loginFormPass" id="loginFormPass" placeholder="Пароль" required>
+				<span>Или через мобильный телефон</span>
+				<input type="text" class="loginFormPhone" id="loginFormPhone" placeholder="Номер телефона">
+				<div class="loginFormMisc">
+					<span>Забыли пароль ?</span>
+					<div class="loginFormButton">
+						<span><a href="lc.html">Вход</a></span>
+					</div>
+				</div>
+				<div class="loginFormAnother">
+					<span>Нет аккаунта ? </span><span class="registrationLink">Зарегистрируйтесь !</span>
+				</div>
+			</form>
+			<div class="loginSocial">
+				<span>Войти через Ваш аккаунт</span>
+				<span>в социальной сети</span>
+				<div class="loginSocialVk">Вконтакте</div>
+				<div class="loginSocialOdn">Одноклассники</div>
+				<div class="loginSocialFb">Facebook</div>
+			</div>
+		</div>
+	</div>
 	<div class="registrationWrapper">
 		<div class="registrationArea">
+			<div class="closeModalRegistration">
+				<img src="images/icons/close.png" alt="Закрыть окно">
+			</div>
 			<form id="registrationForm" class="registrationForm" action="">
 				<h3 class="registrationFormHeader">
 					Регистрация
@@ -231,30 +264,19 @@
 				<input type="text" class="registrationFormPhone" name="registrationFormPhone" placeholder="*Телефон" required>
 				<input type="text" class="registrationFormEmail" name="registrationFormEmail" placeholder="*E-mail" required>
 				<input type="text" class="registrationFormPassword" name="registrationFormPassword" placeholder="*Пароль" required>
+				<div class="polzSoglWrapper">
+					<input type="checkbox" name="polzSogl" id="polzSogl" class="polzSogl"><label for="polzSogl">Я принимаю</label>
+				</div>
+				<a href="#" class="polzSoglLink">Условия пользовательского соглашения</a>
 				<div class="registrationFormSubmit">
 				<span>Регистрация</span></div>
 			</form>
-			<div class="registrationSocial">
-				<h3 class="registrationSocialHeader">
-					Войти через ваш аккаунт в социальной сети
-				</h3>
-				<div class="registrationSocialRow">
-					<div class="registrationSocialBlock">
-						<img src="images/desktop/registration/vk.jpg" alt="Vkontakte" title="Войти через Вконтакте">
-					</div>
-					<div class="registrationSocialBlock">
-						<img src="images/desktop/registration/fb.jpg" alt="Facebook" title="Войти через Фейсбук">
-					</div>
-				</div>
-				<div class="registrationSocialRow">
-					<div class="registrationSocialBlock">
-						<img src="images/desktop/registration/od.jpg" alt="Odnoklassniki" title="Войти через Одноклассники">
-					</div>
-					<div class="registrationSocialBlock">
-						<img src="images/desktop/registration/tw.jpg" alt="Twitter" title="Войти через Твиттер">
-					</div>
-				</div>
-				<div class="gdeZakryt">Типа кнопка закрытия</div>
+			<div class="loginSocial">
+				<span>Войти через Ваш аккаунт</span>
+				<span>в социальной сети</span>
+				<div class="loginSocialVk">Вконтакте</div>
+				<div class="loginSocialOdn">Одноклассники</div>
+				<div class="loginSocialFb">Facebook</div>
 			</div>
 		</div>
 	</div>

@@ -471,71 +471,7 @@ footer
 			top: -3px
 			right: 86px	
 
-.registrationWrapper
-	width: 100%
-	height: 100%
-	position: fixed
-	top: 0
-	left: 0
-	bottom: 0
-	right: 0
-	background-color: rgba(29, 29, 27, .48)	
-	overflow: hidden	
-	display: none
-	.registrationArea
-		width: 565px
-		margin: 190px auto 0 auto 	
-		background-color: $white
-		display: flex
-		.registrationForm
-			width: 90%
-			border-right: 1px solid $blue
-			padding: 13px 26px
-			input[type="text"] 
-				font-family: $ff_arial
-				font-size: 0.9em
-				color: #9f9f9f
-				width: 93%
-				padding: 4px 10px
-				border-radius: 5px
-				box-shadow: none
-				margin-bottom: 12px 
-				border: 1px solid #9f9f9f
-			input[type="text"]::-webkit-input-placeholder::first-letter
-				color: red 	
-			.registrationFormHeader
-				font-family: $ff_arial
-				font-weight: bold
-				font-size: 0.9em
-				text-transform: uppercase
-				padding-bottom: 10px
-			.registrationFormSubmit
-				text-align: center
-				margin: 10px auto
-				span
-					background-image: linear-gradient(-71deg, rgba(0, 186, 205, 1), rgba(2, 128, 142, 1))
-					box-shadow: 2px 2px 2px rgba(0, 0, 0, .4)
-					color: $white
-					text-transform: uppercase
-					font-family: $ff_arial
-					font-weight: bold
-					font-size: 0.7em
-					padding: 8px 10px
-					border-radius: 5px
-					cursor: pointer
-		.registrationSocial
-			padding: 13px 26px
-			text-align: center
-			.registrationSocialHeader
-				font-family: $ff_arial
-				font-size: 0.9em
-			.registrationSocialRow
-				display: flex	
-				margin: 0 auto
-				justify-content: center
-				.registrationSocialBlock
-					margin: 8px 5px 0px 5px
-					cursor: pointer
+
 .gdeZakryt
 	background-image: linear-gradient(-71deg, rgba(0, 186, 205, 1), rgba(2, 128, 142, 1))
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, .4)
@@ -588,3 +524,294 @@ footer
 	top: 3px
 	right: 5px
 	cursor: pointer
+
+
+.loginWrapper
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background-color: rgba(29, 29, 27, .48)	
+	overflow: hidden	
+	display: none
+	.loginArea
+		width: 760px
+		margin: 90px auto 0 auto 	
+		background-color: $white
+		display: flex
+		border-radius: 5px
+		position: relative
+		.loginForm
+			width: 50%
+			border-right: 1px solid #eeeeee
+			padding: 20px 26px
+			background: #fff
+			border-bottom-left-radius: 5px
+			border-top-left-radius: 5px
+			display: flex
+			flex-direction: column
+			align-items: center
+			span
+				font-size: 0.8em
+				color: #9f9f9f
+				padding: 10px
+				font-family: $ff_arial
+				display: block
+			.loginFormAnother
+				display: flex
+				justify-content: space-around
+				align-items: center	
+				span.registrationLink
+					color: $blue
+					text-decoration: underline
+					cursor: pointer	
+			.loginFormMisc
+				display: flex
+				justify-content: space-around
+				align-items: center
+				span
+					color: #000
+					text-decoration: underline
+					cursor: pointer
+					a
+						text-decoration: none
+						color: #fff		
+				.loginFormButton
+					text-align: center
+					margin: 10px auto
+					span
+						background-image: linear-gradient(-71deg, rgba(0, 186, 205, 1), rgba(2, 128, 142, 1))
+						box-shadow: 2px 2px 2px rgba(0, 0, 0, .4)
+						color: $white
+						text-transform: uppercase
+						font-family: $ff_arial
+						font-weight: bold
+						font-size: 0.7em
+						padding: 8px 10px
+						border-radius: 5px
+						cursor: pointer
+			input[type="text"] 
+				font-family: $ff_arial
+				font-size: 0.8em
+				color: #9f9f9f
+				width: 93%
+				padding: 15px 10px
+				box-shadow: none
+				margin-bottom: 12px 
+				border: 1px solid #eeeeee
+			input[type="text"]::-webkit-input-placeholder::first-letter
+				color: #eeeeee
+			.loginFormHeader
+				font-family: $ff_arial
+				font-size: 1.3em
+				padding-bottom: 20px
+				text-align: center
+		.loginSocial
+			background: #fafafa	
+			width: 50%
+			display: flex
+			flex-direction: column
+			align-items: center
+			padding: 20px
+			border-top-right-radius: 5px
+			border-bottom-right-radius: 5px
+			span
+				color: #989598
+				font-family: $ff_arial
+				font-size: 0.8em
+			.loginSocialVk
+				font-family: $ff_arial
+				text-transform: uppercase
+				color: #fff
+				font-size: 0.7em
+				padding: 10px 25px 10px 45px
+				border-radius: 5px
+				background: #426b9a
+				margin-bottom: 20px
+				margin-top: 40px
+				position: relative
+				cursor: pointer
+			.loginSocialVk:before
+				content: url(../images/icons/lgrg__vk.jpg)
+				position: absolute
+				left: 8px
+				top: 4px	
+
+			.loginSocialOdn
+				font-family: $ff_arial
+				text-transform: uppercase
+				color: #fff
+				font-size: 0.7em
+				padding: 10px 10px 10px 25px
+				border-radius: 5px
+				background: #ff8400
+				margin-bottom: 20px
+				position: relative
+				cursor: pointer
+			.loginSocialOdn:before
+				content: url(../images/icons/lgrg__od.jpg)
+				position: absolute
+				left: 5px
+				top: 3px
+
+			.loginSocialFb
+				font-family: $ff_arial
+				text-transform: uppercase
+				color: #fff
+				font-size: 0.7em
+				padding: 10px 25px 10px 50px
+				border-radius: 5px
+				background: #4c68b3
+				position: relative
+				cursor: pointer
+			.loginSocialFb:before
+				content: url(../images/icons/lgrg__fb.jpg)
+				position: absolute
+				left: 15px
+				top: 5px
+.registrationWrapper
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background-color: rgba(29, 29, 27, .48)	
+	overflow: hidden	
+	display: none
+	.registrationArea
+		width: 760px
+		margin: 90px auto 0 auto 	
+		background-color: $white
+		display: flex
+		border-radius: 5px
+		position: relative
+		.registrationForm
+			width: 50%
+			border-right: 1px solid #eeeeee
+			padding: 20px 26px
+			background: #fff
+			border-bottom-left-radius: 5px
+			border-top-left-radius: 5px
+			display: flex
+			flex-direction: column
+			align-items: center
+			text-align: left
+			input[type="text"] 
+				font-family: $ff_arial
+				font-size: 0.8em
+				color: #9f9f9f
+				width: 93%
+				padding: 15px 10px
+				box-shadow: none
+				margin-bottom: 12px 
+				border: 1px solid #eeeeee
+			input[type="text"]::-webkit-input-placeholder::first-letter
+				color: #eeeeee
+			.polzSoglWrapper	
+				display: flex
+				justify-content: flex-start
+				text-align: left
+				align-items: center
+				.polzSogl + label
+					font-family: $ff_arial
+					font-size: 0.9em
+					color: $blue	
+			.polzSoglLink
+				text-decoration: underline
+				color: #333333	
+			.registrationFormHeader
+				font-family: $ff_arial
+				font-size: 1.3em
+				padding-bottom: 20px
+				text-align: center
+			.registrationFormSubmit
+				text-align: center
+				margin: 10px auto
+				span
+					background-image: linear-gradient(-71deg, rgba(0, 186, 205, 1), rgba(2, 128, 142, 1))
+					box-shadow: 2px 2px 2px rgba(0, 0, 0, .4)
+					color: $white
+					text-transform: uppercase
+					font-family: $ff_arial
+					font-weight: bold
+					font-size: 0.7em
+					padding: 8px 10px
+					border-radius: 5px
+					cursor: pointer
+		.loginSocial
+			background: #fafafa	
+			width: 50%
+			display: flex
+			flex-direction: column
+			align-items: center
+			padding: 20px
+			border-top-right-radius: 5px
+			border-bottom-right-radius: 5px
+			span
+				color: #989598
+				font-family: $ff_arial
+				font-size: 0.8em
+			.loginSocialVk
+				font-family: $ff_arial
+				text-transform: uppercase
+				color: #fff
+				font-size: 0.7em
+				padding: 10px 25px 10px 45px
+				border-radius: 5px
+				background: #426b9a
+				margin-bottom: 20px
+				margin-top: 40px
+				position: relative
+				cursor: pointer
+			.loginSocialVk:before
+				content: url(../images/icons/lgrg__vk.jpg)
+				position: absolute
+				left: 8px
+				top: 4px	
+
+			.loginSocialOdn
+				font-family: $ff_arial
+				text-transform: uppercase
+				color: #fff
+				font-size: 0.7em
+				padding: 10px 10px 10px 25px
+				border-radius: 5px
+				background: #ff8400
+				margin-bottom: 20px
+				position: relative
+				cursor: pointer
+			.loginSocialOdn:before
+				content: url(../images/icons/lgrg__od.jpg)
+				position: absolute
+				left: 5px
+				top: 3px
+
+			.loginSocialFb
+				font-family: $ff_arial
+				text-transform: uppercase
+				color: #fff
+				font-size: 0.7em
+				padding: 10px 25px 10px 50px
+				border-radius: 5px
+				background: #4c68b3
+				position: relative
+				cursor: pointer
+			.loginSocialFb:before
+				content: url(../images/icons/lgrg__fb.jpg)
+				position: absolute
+				left: 15px
+				top: 5px			
+
+
+.closeModalLogin, .closeModalRegistration
+	position: absolute
+	top: 10px
+	right: 25px
+	cursor: pointer				
+
+				
