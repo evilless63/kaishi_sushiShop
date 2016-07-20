@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="dist/css/styles.css">
+	<link rel="stylesheet" href="dist/fonts/icons/icons.css">
+	<title>Admin main</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="my my_w"></div>
+			<div class="auth_path">
+				<ul>
+					<li><a href="" class="auth_link">
+						<div class="my my_k"></div>
+						<span>Admin: Грязнова Анна</span>
+					</a></li>
+					<li><a href="index.html" class="auth_link auth_out">
+						Выход
+					</a></li>
+				</ul>
+			</div>
+		</div>	
+	</header>
+	<ul class="date_time_path">
+		<li>
+			<div class="my my_j"></div>
+			<span>14 июня, 2016</span>
+		</li>
+		<li>
+			<div class="my my_i"></div>
+			<span>13:32</span>
+		</li>
+	</ul>
+	<main class="main_board container">
+
+		<h1 class="my my_g main_board_h1"><span>Заказы</span>
+		<form action="?" class="app_form_search" id="app_form_search">
+			<div class="my my_h"></div>
+			<input type="text" name="app_search" id="app_search" class="app_search" placeholder="Введите № чека">
+		</form>
+		</h1>
+		<div class="menu_main_board">
+			<div id="all" class="menu_main_link">
+				<div class="my my_a"></div>
+				<div class="count_app">420</div>
+				<span>Все</span>
+			</div>
+			<div id="new" class="menu_main_link">
+				<div class="my my_b"></div>
+				<div class="count_app">35</div>
+				<span>Новые</span>
+			</div>
+			<div id="accepted" class="menu_main_link">
+				<div class="my my_c"></div>
+				<div class="count_app">65</div>
+				<span>Принятые</span>
+			</div>
+			<div id="on_way" class="menu_main_link">
+				<div class="my my_d"></div>
+				<div class="count_app">65</div>
+				<span>В пути</span>
+			</div>
+			<div id="completed" class="menu_main_link">
+				<div class="my my_e"></div>
+				<div class="count_app">65</div>
+				<span>Завершенные</span>
+			</div>
+			<div id="deleted" class="menu_main_link">
+				<div class="my my_f"></div>
+				<div class="count_app">2</div>
+				<span>Удаленные</span>
+			</div>
+		</div>
+		<table class="application_field">
+			<thead class="application_field_header">
+				<tr>
+					<td class="app_number">№</td>
+					<td class="app_phone">Телефон</td>
+					<td class="app_adress">Адрес</td>
+					<td class="app_time">Время</td>
+					<td class="app_status">Статус</td>
+				</tr>
+			</thead>
+			<tbody class="application_field_body">
+				<tr>
+					<td class="app_body_number">1</td>
+					<td class="app_body_phone">+7 (917) 036 36 68</td>
+					<td class="app_body_adress">
+					<a href="application.html">
+						ул.Аврора, д. 70 , пд. 1, кв. 96
+					</a></td>
+					<td class="app_body_time">13:02</td>
+					<td class="app_status_new">Новый</td>
+				</tr>
+				<tr>
+					<td class="app_body_number">2</td>
+					<td class="app_body_phone">+7 (927) 695 65 85</td>
+					<td class="app_body_adress">
+					<a href="application.html">
+						ул.Гагарина, д. 72, пд. 1, кв. 34
+					</a></td>
+					<td class="app_body_time">13:02</td>
+					<td class="app_status_accepted">Принятый</td>
+				</tr>
+				<tr>
+					<td class="app_body_number">3</td>
+					<td class="app_body_phone">+7 (917) 036 36 68</td>
+					<td class="app_body_adress"><a href="application.html">
+						ул.Гагарина, д. 72, пд. 1, кв. 34
+					</a></td>
+					<td class="app_body_time">13:02</td>
+					<td class="app_status_onway">В пути</td>
+				</tr>
+				<tr class="app_whitespace_field_body">
+					<td></td>
+					<td></td>
+					<td class="app_body_adress"></td>
+					<td></td>
+					<td class="app_status_onway"></td>
+				</tr>
+			</tbody>
+		</table>
+	</main>
+	<script src="dist/bower/jquery/dist/jquery.js">
+	</script>
+	<script src="dist/js/script.js">	
+	</script>
+</body>
+</html>

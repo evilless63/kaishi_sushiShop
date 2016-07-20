@@ -211,6 +211,9 @@ body {
           padding: 9px 0;
           border: 1px solid #c9d3dc;
           cursor: pointer; }
+          body main.main_board .application_field .application_field_body tr td a {
+            color: #2a333c;
+            text-decoration: none; }
         body main.main_board .application_field .application_field_body .app_status_new, body main.main_board .application_field .application_field_body .app_status_accepted, body main.main_board .application_field .application_field_body .app_status_onway {
           text-transform: uppercase; }
         body main.main_board .application_field .application_field_body .app_status_new {
