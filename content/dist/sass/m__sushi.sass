@@ -1,0 +1,199 @@
+@import "m__main.sass"
+
+.rowProduct
+	padding: 0 15px 0px 15px
+	margin: 0 auto
+	text-align: center
+	.rowProductHeader
+		font-family: $ff_arial
+		font-weight: bold
+		font-size: 1.1em
+		text-align: center
+		padding: 10px 0 15px 0
+		color: #363738
+	.rowProductImg	
+		width: 100%
+	.rowProductDesc
+		font-family: $ff_arial
+		font-size: 0.76em
+		color: #363738
+		padding: 5px 0 0 0
+	.rowProductPayment
+		display: flex
+		justify-content: space-around
+		align-items: center	
+		padding: 20px 6px 10px 6px
+		.rowProductPaymentCost
+			color: #363738
+			background-color: #fff
+			border-radius: 5px
+			box-shadow: inset 1px 1px 0 0 rgba(0, 0, 0, 0.2)
+			text-align: center
+			padding: 9px 35px
+			font-family: $ff_arial
+			font-size: 0.8em
+		.rowProductPaymentTocart
+				color: $white
+				font-family: $ff_arial
+				font-size: 0.8em
+				text-transform: uppercase
+				padding: 8px 7px 8px 25px
+				border-radius: 5px
+				box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3)
+				background-image: linear-gradient(180deg, rgb(0, 162, 183), rgb(7, 146, 165))	
+				cursor: pointer
+				position: relative
+		.rowProductPaymentTocart:before
+			content: url(../images/icons/misc__cart.png)
+			width: 20px
+			border-top-left-radius: 5px
+			border-bottom-left-radius: 5px
+			position: absolute
+			padding: 7px 2px 5px 1px
+			top: 0px
+			left: 0px
+			background-color: #353737	
+
+.sushiProfailWrapper
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background-color: rgba(29, 29, 27, .48)	
+	overflow: hidden	
+	display: none
+	.sushiProfailArea
+		margin: 60px auto 0 auto 	
+		background-color: $white
+		display: flex
+		flex-direction: column
+		border-radius: 5px
+		position: relative
+		background-color: #e5e5e5
+		h3
+			padding: 7px 0px 10px 0px
+			margin-bottom: 20px
+			font-family: $ff_arial
+			font-weight: bold
+			font-size: 1.2em
+			color: #363738
+			display: block
+			border-top-left-radius: 5px
+			border-top-right-radius: 5px
+			text-align: center
+		.tabs
+			margin-top: -20px
+			display: block
+			width: 100%
+			background-color: #fff
+			.tabs__caption
+				display: flex
+				margin: 0px 0px 0px 0px
+				display: flex
+				border-bottom: 1px solid #c5c5c5
+				align-items: baseline
+				justify-content: center
+				background-color: #e5e5e5
+				li.active
+					font-family: $ff_arial
+					font-size: 1em
+					color: #4e4c62
+					background-color: #fff
+					border-top-left-radius: 5px
+					border-top-right-radius: 5px
+					border-top: 1px solid #c5c5c5
+					border-right: 1px solid #c5c5c5
+					border-left: 1px solid #c5c5c5
+					border-bottom: 1px solid #fff
+					margin-bottom: -1px
+					padding: 3px 3px
+					font-weight: bold
+				li
+					font-family: $ff_arial
+					font-size: 0.7em	
+					color: #4e4c62
+					border: none
+					background-color: transparent
+					margin: 0px 5px
+					font-weight: bold
+					text-transform: uppercase
+					cursor: pointer
+			.tabs__content
+				display: none;
+				.tabs__contentDesc
+					display: flex
+					flex-direction: column
+					align-items: center
+					span
+						display: block
+						font-size: 0.8em
+						font-family: $ff_arial
+						padding: 3px 0
+						color: #4e4c62
+				.tabs__contentBuy
+					padding: 0 15px
+					text-align: center
+					span
+						font-size: 0.7em
+						color: #4e4c62
+						font-family: $ff_arial
+						text-align: center 
+					.tabs__contentBuyBlock
+						display: flex
+						justify-content: space-around
+						align-items: flex-start
+						img
+							width: 40px
+						span
+							font-size: 1.9em
+							font-weight: bold
+							color: #4e4c62
+							font-family: $ff_arial
+							margin-bottom: 15px	
+							span.min
+								font-size: 0.5em
+					.sushiBlockGetBusketProfail
+						color: $white
+						font-family: $ff_arial
+						font-size: 1em
+						font-weight: bold
+						padding: 10px 7px 7px 17px
+						border-radius: 5px
+						box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3)
+						background-image: linear-gradient(180deg, rgb(0, 162, 183), rgb(7, 146, 165))	
+						cursor: pointer
+						position: relative
+						text-transform: uppercase
+						margin: 10px auto 0px auto
+					.sushiBlockGetBusketProfail:before
+						content: url(../images/icons/misc__cart.png)
+						width: 22px
+						border-top-left-radius: 5px
+						border-bottom-left-radius: 5px
+						position: absolute
+						padding: 10px 2px 4px 8px
+						top: 0px
+						left: 0px
+					.sushiBlockToCatalog	
+						color: #4e4c62
+						font-family: $ff_arial
+						font-size: 1em
+						font-weight: bold
+						padding: 10px 7px 7px 17px
+						border-radius: 5px
+						box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3)
+						background-image: linear-gradient(180deg, rgb(217, 214, 214), rgb(176, 175, 175))	
+						cursor: pointer
+						position: relative
+						text-transform: uppercase
+						margin: 30px auto 0px auto	
+						span
+							color: $blue	
+							font-size: 1em			
+			.tabs__content.active
+				display: flex
+				justify-content: space-between
+				padding: 15px

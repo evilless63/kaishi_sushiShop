@@ -1,0 +1,400 @@
+$white: rgb(255, 255, 255)
+$white_opacity_07: rgba(255, 255, 255, 0.7)
+$blue: rgb(0, 180, 205)
+$gray: rgb(53, 54, 55)
+$black: rgb(0, 0, 0)
+
+$ff_arial: arial
+$ff_candara: candara
+
+body
+	background: url(../images/background.jpg)
+	width: 100%
+	height: 100%
+
+*
+	transition: 200ms
+
+*:hover
+	transition: 200ms	
+
+.container
+	width: 100%
+	margin: 0 auto
+	@media screen and (max-width: 640px)
+		width: 100%
+
+.row
+	display: flex
+
+.toLeft
+	justify-content: left
+
+.toRight
+	justify-content: right
+
+.toCenter
+	justify-content: center
+
+.toSpaceBetween
+	justify-content: space-between
+
+.toSpaceAround
+	justify-content: space-around
+
+
+
+.alignCenter
+	align-items: center
+
+.alignStretch
+	align-items: stretch	
+
+.alignBaseline
+	align-items: baseline	
+
+footer.mobileFooter
+	background: red	
+	height: 113px
+	background: url(../images/desktop/header_background.png) no-repeat center center
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.65);
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.65);
+	border-top: 3px solid $blue
+	height: 40px
+	.mobileFooterMenu
+		display: flex
+		justify-content: space-around
+		align-items: center
+		padding: 5px 0 0 0  
+		.mobileFooterMenuBlock
+			display: flex
+			flex-direction: column
+			justify-content: space-around
+			align-items: center
+			.mobileFooterMenuBlockDesc
+				text-transform: uppercase
+				font-family: $ff_arial
+				font-size: 0.6em
+				padding-top: 5px
+				color: #fff
+
+
+header.mobileHeader
+	background: red	
+	height: 113px
+	background: url(../images/desktop/header_background.png) no-repeat center center
+	-webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.65);
+	-moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.65);
+	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.65);
+	display: flex
+	align-items: center
+	justify-content: space-around
+	border-bottom: 3px solid $blue
+	height: 40px
+	.headerMenuIcon
+		width: 7%
+		.headerMenuBurger
+			border-bottom: 0.3em solid #fff
+			margin-bottom: 3px
+
+	.headerMenuIcon:hover + .headerMenuBurger
+		border-bottom: 3px solid $blue		
+	
+	.logo
+		height: 26px
+		a
+			img
+				width: 60%
+
+.special
+	background: url(../images/mobile/specialBackground.jpg) top left no-repeat
+	background-color: black
+	height: 75px
+	width: 100%
+	display: flex
+	justify-content: flex-end
+	align-items: center
+	.specialDesc
+		text-align: center
+		width: 50%
+		.specialDescHeader
+			font-family: $ff_arial
+			font-weight: bold
+			font-size: 1.3em
+			color: $blue
+			padding-bottom: 5px
+		.specialDescText	
+			font-family: $ff_arial
+			font-size: 0.8em
+			text-transform: uppercase
+			line-height: 1.2em
+			color: $blue
+
+/**Уникальные стили**/	
+.topMenuWrap
+	background-color: rgba(16, 16, 16, 0.75)
+	padding: 5px 0px
+.topMenu, .registerAndSearch
+	width: 328px
+	ul
+		li
+			a:hover
+				color: $white
+			a
+				color: $white_opacity_07	
+				font-size: 0.7em
+				font-family: $ff_arial
+.registerAndSearch
+	width: 171px
+	ul
+		input[type="text"]
+			width: 60px	
+			font-size: 0.7em
+			background-color: rgb(64, 64, 64)
+			color: $white_opacity_07
+			border: none
+			padding: 2px 3px
+	span
+		color: $white_opacity_07					
+.informationTopPath
+	.workInfo
+		text-align: left
+		color: $white_opacity_07
+		.phone:before
+			content: url(../images/icons/topMenu__phone.png)
+			width: 20px	
+			left: -4px
+			top: 6px
+			position: absolute
+		.phone, .workHours
+			font-family: $ff_arial
+			font-size: 16px
+			padding: 8px 0px 6px 0px
+			position: relative
+		.phone
+			padding-left: 25px	
+		.workHours
+			line-height: 19px
+			span
+				color: $blue	
+	.logo
+		text-align: center
+		padding: 4px 0 0 0
+		.line
+			border-top: 1px solid rgb(0, 185, 203)
+		p
+			color: $white_opacity_07 
+			font-family: $ff_candara
+			text-transform: uppercase
+			font-size: 14px
+			padding: 4px 0 0 0
+	.cart
+		background-color: rgba(255,255,255, 0.53)	
+		border-radius: 4px
+		text-align: center	
+		color: $white
+		font-family: $ff_arial
+		font-size: 10px
+		padding: 4px 7px	
+		line-height: 12px
+		margin-top: 4px
+		margin-left: 53px
+
+main
+
+
+.mainWrap
+	.sidebar
+		width: 100%
+		.productMenu
+			.productMenuHeader
+				background-color: rgb(0, 186, 205)
+				font-family: $ff_candara
+				font-weight: bold
+				color: $black
+				font-size: 1.2em
+				padding: 12px 15px
+				text-transform: uppercase
+			ul
+				li
+					position: relative
+					a
+						font-family: $ff_candara
+						font-size: 1em
+						text-transform: uppercase
+						color: $gray
+						font-weight: bold
+						padding: 19.3px 18px 10.6px 80px
+						display: block
+						position: relative
+						background: url(../images/menu_background.jpg)
+						border-bottom: 1px solid rgb(51, 136, 146) 
+					a:hover
+						color: $blue
+						background-color: rgba(255, 255, 255, 0.8)
+					a:after
+						content:url(../images/icons/mainMenu__arrow.svg)
+						position: absolute
+						width: 20px
+						top: 16px
+						right: 10px
+					a.sushi:before
+						content:url(../images/icons/mainMenu__sushi.svg)
+						position: absolute
+						width: 45px
+						top: 10px
+						left: 10%;	
+					a.inari:before
+						content:url(../images/icons/mainMenu__inari.svg)
+						position: absolute
+						width: 45px
+						top: 10px
+						left: 10%;	
+					a.rolls:before
+						content:url(../images/icons/mainMenu__rolls.svg)
+						position: absolute
+						width: 45px
+						top: 10px
+						left: 10%;	
+					a.hotrolls:before
+						content:url(../images/icons/mainMenu__hotrolls.svg)
+						position: absolute
+						width: 45px
+						top: 10px
+						left: 10%;
+					a.set:before
+						content:url(../images/icons/mainMenu__set.svg)
+						position: absolute
+						width: 45px
+						top: 10px
+						left: 10%;
+					a.gunkan:before
+						content:url(../images/icons/mainMenu__gunkan.svg)
+						position: absolute
+						width: 45px
+						top: 10px
+						left: 10%;	
+					a.zakuski:before
+						content:url(../images/icons/mainMenu__zakuski.svg)
+						position: absolute
+						width: 55px
+						top: 10px
+						left: 8%;	
+					a.pizza:before
+						content:url(../images/icons/mainMenu__pizza.svg)
+						position: absolute
+						width: 65px
+						top: 0px
+						left: 7%;	
+					a.drink:before
+						content:url(../images/icons/mainMenu__drink.svg)
+						position: absolute
+						width: 45px
+						top: 10px
+						left: 10%;										
+				li:before
+					content: ""
+					width: 9%
+					height: 45px
+					position: absolute
+					border-right: dashed 1px rgb(197, 197, 197)	
+					z-index: 10
+				li:after
+					content: ""
+					width: 9%
+					height: 45px
+					top: 0px
+					right: 0px
+					position: absolute
+					border-left: dashed 1px rgb(197, 197, 197)	
+		.themeSets
+			.themeSetsHeader
+				font-weight: bold
+				text-transform: uppercase
+				color: $white
+				font-family: $ff_candara
+				font-size: 1.2em
+				background-color: rgb(29, 29, 27)
+				padding: 13px 15px
+				a
+					color: $white
+			.themeSetsBlock
+				background-color: rgba(255,255,255, 0.4)
+				.themeSetsBlockHeader
+					a
+						font-family: $ff_candara
+						font-weight: bold
+						font-size: 1em
+						color: $gray
+						background-color: $white
+						padding: 4px 15px
+						display: block	
+						position: relative
+					a:after
+						content:url(../images/icons/mainMenu__arrow.svg)
+						position: absolute
+						width: 20px
+						top: 4px
+						right: 10px 
+				a.themeSetsBlockImage
+					display: block
+					text-align: center
+					position: relative		
+					margin-top: 10px
+					.themeSetsBlockImageCover
+						width: 241px
+						height: 160px
+						margin-bottom: -163px
+						display: inline-block
+						position: absolute;
+						text-align: center
+						span
+							display: none
+							color: $white
+							font-size: 1.9em
+							text-transform: uppercase
+							font-family: $ff_candara
+							font-weight: bold
+							padding-top: 66px
+					.themeSetsBlockImageCover:hover
+						background-image: linear-gradient(135deg, rgba(0, 186, 205, .42), rgba(1, 73, 80, .42) )
+						transition: 200ms
+							
+					p
+						position: absolute
+						font-family: $ff_arial
+						font-weight: bold
+						font-size: 19.37px
+						color: $white
+						background-color: rgb(217, 43, 63)
+						padding: 3px
+						bottom: 3px
+						right: 15px
+				p.themeSetsBlockDesc
+						font-family: $ff_candara
+						font-size: 0.88em
+						color: $gray
+						text-align: left	
+						padding: 3px 15px 9px 15px	
+
+					
+@media screen and (max-width: 640px) 
+	.body
+		width: 640px
+	
+
+@media screen and (max-width: 500px) 
+	.body
+		width: 500px	
+
+
+@media screen and (max-width: 400px) 
+	.body
+		width: 400px
+		
+
+@media screen and (max-width: 321px) 
+	.body
+		width: 320px
+							

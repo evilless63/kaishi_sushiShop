@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/m__cart.css">
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/button.css">
+	<!--[if lt IE 9]>
+		<script src="bower/html5shiv/dist/html5shiv.js"></script>
+	<![endif]-->
+	<!--[if lt IE 9]>
+		<script src="bower/css3-mediaqueries-js/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<title>sushi</title>
+</head>
+<body>
+	<header class="mobileHeader">
+		<div class="headerMenuIcon">
+			<div class="headerMenuBurger"></div>
+			<div class="headerMenuBurger"></div>
+			<div class="headerMenuBurger"></div>
+		</div>
+		<div class="logo">
+			<a href="index.html"><img src="../images/logo.png" alt="Суши"></a>
+		</div>
+	</header>
+	<div class="topAlert">
+		<span>Мин.заказ: 500 руб.</span>
+		<span>Доставка: Бесплатно</span>
+	</div>
+	<main class="chooseProucts">
+		<div class="mainWrap container row toSpaceBetween">
+			<div class="sidebar">
+				<div class="cartRow">
+					<div class="cartRowDesc">
+						<span>Канада</span>
+						<span class="gray" >С беконом</span>
+					</div>
+					<div class="cartRowCost">230 р.</div>
+					<input type="text" name="cartRowCount" class="cartRowCount" value="1">
+					<div class="cartRowFinalCost">460 р.</div>
+					<div class="cartRowDelete">
+						<img src="../images/icons/misc__delete.svg" alt="">
+					</div>
+				</div>
+				<div class="cartRow">
+					<div class="cartRowDesc">
+						<span>Канада</span>
+						<span class="gray" >С беконом</span>
+					</div>
+					<div class="cartRowCost">230 р.</div>
+					<input type="text" name="cartRowCount" class="cartRowCount" value="1">
+					<div class="cartRowFinalCost">460 р.</div>
+					<div class="cartRowDelete">
+						<img src="../images/icons/misc__delete.svg" alt="">
+					</div>
+				</div>
+				<div class="finalCost">
+					Итого: 920 руб.
+				</div>
+				<form action="" class="formActionCart" id="formActionCart">
+					<h3 class="formActionCartHeader">
+						Оформление
+					</h3>
+					<input type="text" class="formActionCartName" id="formActionCartName" name="formActionCartName" placeholder="*Ваше имя">
+					<input type="text" class="formActionCartSurname" id="formActionCartSurname" name="formActionCartSurname" placeholder="*Ваша фамилия">
+					<input type="text" class="formActionCartPhone" id="formActionCartPhone" name="formActionCartPhone" placeholder="*Телефон">
+					<input type="text" class="formActionCartAdress" id="formActionCartAdress" name="formActionCartAdress" placeholder="*Адрес">
+					<textarea name="formActionCartComment" id="formActionCartComment" cols="30" rows="3" placeholder="Комментарий"></textarea>
+					<div class="formActionCartNext">
+						Далее >
+					</div>
+				</form>
+			</div>
+	</main>
+	<main class="choosePayment">
+		<div class="mainWrap container row toSpaceBetween">
+			<div class="sidebar">
+				<h3 class="choosePaymentHeader">Способы оплаты</h3>
+				<div class="choosePaymentRow">
+					<div class="choosePaymentBlock choosePaymentBlockCache">
+						Наличными<br>курьеру
+					</div>
+					<div class="choosePaymentBlock choosePaymentBlockYandexmoney">
+						Яндекс<br>деньги
+					</div>
+				</div>
+				<div class="choosePaymentRow">
+					<div class="choosePaymentBlock choosePaymentBlockCourercart">
+						Картой<br>курьеру
+					</div>
+					<div class="choosePaymentBlock choosePaymentBlockCart">
+						Банковской<br>картой
+					</div>
+				</div>
+				<div class="choosePaymentRow">
+					<div class="choosePaymentBlock choosePaymentBlockQiwi">
+						qiwi
+					</div>
+					<div class="choosePaymentBlock choosePaymentBlockWebmoney">
+						webmoney
+					</div>
+				</div>
+				<div class="choosePaymentRow">
+					<div class="sdacha">
+						С какой суммы потребуется сдача ?
+					</div>
+					<input type="text" name="sdachaInput" class="sdachaInput" id="sdachaInput">
+				</div>
+				<div class="choosePaymentRow JustifyStart">
+					<label for="bezSdachi">Без сдачи</label>
+					<input type="checkbox" name="bezSdachi" class="bezSdachi" id="bezSdachi">
+				</div>
+				<div class="formActionCartZakaz">
+					Заказать >
+				</div>
+			</div>
+	</main>
+	<footer class="mobileFooter">
+		<div class="mobileFooterMenu">
+			<a href="korzina.html" class="mobileFooterMenuBlock">
+				<img src="../images/mobile/icons/m__cart.png" alt="Корзина">
+				<div class="mobileFooterMenuBlockDesc">1600 р.</div>
+			</a>
+			<a href="akcii.html" class="mobileFooterMenuBlock">
+				<img src="../images/mobile/icons/m__present.png" alt="Акции">
+				<div class="mobileFooterMenuBlockDesc">Акции</div>
+			</a>
+			<a class="mobileFooterMenuBlock">
+				<img src="../images/mobile/icons/m__car.png" alt="Доставка">
+				<div class="mobileFooterMenuBlockDesc">Доставка</div>
+			</a>
+			<a href="otzyvy.html" class="mobileFooterMenuBlock">
+				<img src="../images/mobile/icons/m__star.png" alt="Отзывы">
+				<div class="mobileFooterMenuBlockDesc">Отзывы</div>
+			</a>
+		</div>
+	</footer>
+
+	
+	<script src="../bower/jquery/dist/jquery.js"></script>
+	<script src="../bower/moff/dist/moff.js"></script>
+	<script src="../js/app.js"></script>
+</body>
+</html>

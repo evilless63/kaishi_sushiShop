@@ -50,10 +50,21 @@ $(document).ready(function(){
 		function(){
 			$( ".sushiProfailWrapper" ).css( "display", "block" );	
 		});
+
+		$( ".rowProductPaymentTocart" ).click(
+		function(){
+			$( ".sushiProfailWrapper" ).css( "display", "block" );	
+		});
+		
 	$( ".closeModal" ).click(
 		function(){
 			$( ".sushiProfailWrapper" ).css( "display", "none" );
 		});	
+	
+	$( ".sushiBlockToCatalog" ).click(
+		function(){
+			$( ".sushiProfailWrapper" ).css( "display", "none" );
+		});		
 	
 	$(".sushiBlockGetBusketProfail").click(
 		function(){
@@ -86,6 +97,8 @@ $(document).ready(function(){
 	// 	}
 	// })
 
+	
+
 });
 
 (function($) {
@@ -99,6 +112,26 @@ $(function() {
 
 });
 })(jQuery);
+
+
+//MOBILE
+
+
+$(document).ready(function(){
+	$( ".formActionCartNext").click(
+		function(){
+			$(".chooseProucts").css("display", "none");
+			$(".topAlert").css("display", "none");
+			
+			$( ".choosePayment" ).css( "display", "block" );
+		});
+	
+	$( ".formActionCartZakaz").click(
+		function(){
+			alert("Товар успешно заказан !");
+		});	
+});	
+
 
 
 

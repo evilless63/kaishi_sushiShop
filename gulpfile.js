@@ -8,6 +8,7 @@ var browserSync = require('browser-sync');
 gulp.task('watch', ['browserSync', 'sass'], function(){
 	gulp.watch('content/dist/sass/*.sass', ['sass']);
 	gulp.watch('content/dist/*.html', browserSync.reload);
+	gulp.watch('content/dist/m/*.html', browserSync.reload);
 	gulp.watch('content/dist/js/*.js', browserSync.reload);
 	gulp.watch('content/dist/bower/*/*.js', browserSync.reload);
 });
